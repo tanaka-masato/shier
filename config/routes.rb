@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  root 'workplaces#index'
   get 'comments/new'
   get 'days/index'
   get 'days/new'
