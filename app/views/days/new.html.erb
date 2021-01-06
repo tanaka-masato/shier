@@ -1,2 +1,7 @@
 <h1>Days#new</h1>
 <p>Find me in app/views/days/new.html.erb</p>
+<%= form_with model: @day, local: true do |f| %>
+  <%= f.date_field :day %>
+  <%= f.text_field :contents %>
+  <%= f.submit %>
+<% end %>

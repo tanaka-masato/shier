@@ -688,3 +688,342 @@ Processing by DaysController#index as HTML
 Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 5487)
 
 
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddContentsToDays (20210106175348)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "days" ADD "contents" text[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210106175348"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/workplaces/index" for ::1 at 2021-01-07 02:54:46 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1573)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 46.7ms | ActiveRecord: 0.3ms | Allocations: 15113)
+
+
+Started GET "/workplaces/index" for ::1 at 2021-01-07 02:54:48 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 627)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.2ms | Allocations: 5395)
+
+
+Started GET "/days/new" for ::1 at 2021-01-07 02:54:49 +0900
+Processing by DaysController#new as HTML
+  Rendering days/new.html.erb within layouts/application
+  Rendered days/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 20.6ms | ActiveRecord: 0.6ms | Allocations: 10099)
+
+
+Started GET "/days/new" for ::1 at 2021-01-07 02:54:58 +0900
+Processing by DaysController#new as HTML
+  Rendering days/new.html.erb within layouts/application
+  Rendered days/new.html.erb within layouts/application (Duration: 249.0ms | Allocations: 82707)
+Completed 500 Internal Server Error in 254ms (ActiveRecord: 0.0ms | Allocations: 84035)
+
+
+  
+ActionView::Template::Error (undefined method `days_path' for #<#<Class:0x00007fa9d689b728>:0x00007fa9d6899108>
+Did you mean?  days_new_path):
+    1: <h1>Days#new</h1>
+    2: <p>Find me in app/views/days/new.html.erb</p>
+    3: <%= form_with model: @day, local: true do |f| %>
+    4:   <%= f.text_field :contents %>
+    5:   <%= f.submit %>
+    6: <% end %>
+  
+app/views/days/new.html.erb:3
+Started GET "/days/new" for ::1 at 2021-01-07 02:55:13 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#new as HTML
+  Rendering days/new.html.erb within layouts/application
+  Rendered days/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2301)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 24.9ms | ActiveRecord: 0.9ms | Allocations: 12490)
+
+
+Started GET "/days/new" for ::1 at 2021-01-07 02:55:30 +0900
+Processing by DaysController#new as HTML
+  Rendering days/new.html.erb within layouts/application
+  Rendered days/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 523)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 6335)
+
+
+Started POST "/days" for ::1 at 2021-01-07 02:55:33 +0900
+Processing by DaysController#create as HTML
+  Parameters: {"authenticity_token"=>"pavU7byhRfAkR28wMe7z2IL+8lqclBW4nbUbqh5UQN0c/vLo0sxbJP7LxAm9tuEgLSfGZmJYtsJiG5z/4LzfxQ==", "day"=>{"contents"=>"ff"}, "commit"=>"Create Day"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/days_controller.rb:12:in `create'
+  [1m[36mDay Create (0.5ms)[0m  [1m[32mINSERT INTO "days" ("created_at", "updated_at", "contents") VALUES (?, ?, ?)[0m  [["created_at", "2021-01-06 17:55:33.187388"], ["updated_at", "2021-01-06 17:55:33.187388"], ["contents", "ff"]]
+  ↳ app/controllers/days_controller.rb:12:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/days_controller.rb:12:in `create'
+Redirected to http://localhost:3000/workplaces/index
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms | Allocations: 2841)
+
+
+Started GET "/workplaces/index" for ::1 at 2021-01-07 02:55:33 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 852)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.2ms | Allocations: 6301)
+
+
+Started GET "/workplaces/index" for ::1 at 2021-01-07 02:56:19 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 21.0ms | Allocations: 6053)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 67.7ms | ActiveRecord: 1.6ms | Allocations: 18096)
+
+
+Started GET "/days/new" for ::1 at 2021-01-07 02:56:21 +0900
+Processing by DaysController#new as HTML
+  Rendering days/new.html.erb within layouts/application
+  Rendered days/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 7976)
+
+
+Started POST "/days" for ::1 at 2021-01-07 02:56:39 +0900
+Processing by DaysController#create as HTML
+  Parameters: {"authenticity_token"=>"AN2xBpk34+lIEVhDG+kvVTcIamhRO73y/1DRLGDQBKF5sbNIh5B4FicWjbW199PdTM47PhJzIlG9QvTmRYs6lA==", "day"=>{"day"=>"10月2日", "contents"=>"lllllll"}, "commit"=>"Create Day"}
+[31mUnpermitted parameter: :day[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/days_controller.rb:12:in `create'
+  [1m[36mDay Create (1.2ms)[0m  [1m[32mINSERT INTO "days" ("created_at", "updated_at", "contents") VALUES (?, ?, ?)[0m  [["created_at", "2021-01-06 17:56:39.495168"], ["updated_at", "2021-01-06 17:56:39.495168"], ["contents", "lllllll"]]
+  ↳ app/controllers/days_controller.rb:12:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/days_controller.rb:12:in `create'
+Redirected to http://localhost:3000/workplaces/index
+Completed 302 Found in 14ms (ActiveRecord: 2.5ms | Allocations: 2901)
+
+
+Started GET "/workplaces/index" for ::1 at 2021-01-07 02:56:39 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.6ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 645)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.6ms | Allocations: 5412)
+
+
+Started GET "/workplaces/index" for ::1 at 2021-01-07 02:57:26 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.6ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 31.1ms | Allocations: 6111)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 91ms (Views: 74.5ms | ActiveRecord: 2.1ms | Allocations: 18198)
+
+
+Started GET "/workplaces/index" for ::1 at 2021-01-07 02:57:27 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.4ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 655)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.4ms | Allocations: 5425)
+
+
+Started GET "/days/new" for ::1 at 2021-01-07 02:57:29 +0900
+Processing by DaysController#new as HTML
+  Rendering days/new.html.erb within layouts/application
+  Rendered days/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2512)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms | Allocations: 7960)
+
+
+Started POST "/days" for ::1 at 2021-01-07 02:57:33 +0900
+Processing by DaysController#create as HTML
+  Parameters: {"authenticity_token"=>"1PHLGi4hCuxwQbWJm5htzApAyfJJBO3AcYdFpyV2t/KtnclUMIaREx9GYH81hpFEcYaYpApMcmMzlWBtAC2Jxw==", "day"=>{"day"=>"10月2日", "contents"=>"fff"}, "commit"=>"Create Day"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/days_controller.rb:12:in `create'
+  [1m[36mDay Create (0.5ms)[0m  [1m[32mINSERT INTO "days" ("created_at", "updated_at", "contents") VALUES (?, ?, ?)[0m  [["created_at", "2021-01-06 17:57:33.859651"], ["updated_at", "2021-01-06 17:57:33.859651"], ["contents", "fff"]]
+  ↳ app/controllers/days_controller.rb:12:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/days_controller.rb:12:in `create'
+Redirected to http://localhost:3000/workplaces/index
+Completed 302 Found in 15ms (ActiveRecord: 1.7ms | Allocations: 3004)
+
+
+Started GET "/workplaces/index" for ::1 at 2021-01-07 02:57:33 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 661)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.2ms | Allocations: 5424)
+
+
+Started GET "/workplaces/index" for ::1 at 2021-01-07 03:00:27 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 855)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.1ms | Allocations: 6663)
+
+
+Started GET "/days/new" for ::1 at 2021-01-07 03:00:29 +0900
+Processing by DaysController#new as HTML
+  Rendering days/new.html.erb within layouts/application
+  Rendered days/new.html.erb within layouts/application (Duration: 28.2ms | Allocations: 4909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.0ms | Allocations: 10235)
+
+
+Started POST "/days" for ::1 at 2021-01-07 03:00:42 +0900
+Processing by DaysController#create as HTML
+  Parameters: {"authenticity_token"=>"IYTT8hSWO64ERUXjPhqJ6saDaFSnw1azDlLEWLpMm05Y6NG8CjGgUWtCkBWQBHVivUU5AuSLyRBMQOGSnxelew==", "day"=>{"day"=>"2021-01-19", "contents"=>"lkl"}, "commit"=>"Create Day"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/days_controller.rb:12:in `create'
+  [1m[36mDay Create (0.7ms)[0m  [1m[32mINSERT INTO "days" ("created_at", "updated_at", "day", "contents") VALUES (?, ?, ?, ?)[0m  [["created_at", "2021-01-06 18:00:42.451629"], ["updated_at", "2021-01-06 18:00:42.451629"], ["day", "2021-01-19"], ["contents", "lkl"]]
+  ↳ app/controllers/days_controller.rb:12:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/days_controller.rb:12:in `create'
+Redirected to http://localhost:3000/workplaces/index
+Completed 302 Found in 10ms (ActiveRecord: 2.1ms | Allocations: 2686)
+
+
+Started GET "/workplaces/index" for ::1 at 2021-01-07 03:00:42 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 684)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms | Allocations: 5442)
+
+
+Started GET "/days/new" for ::1 at 2021-01-07 03:01:21 +0900
+Processing by DaysController#new as HTML
+  Rendering days/new.html.erb within layouts/application
+  Rendered days/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 414)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 5186)
+
+
+Started GET "/days/new" for ::1 at 2021-01-07 03:01:26 +0900
+Processing by DaysController#new as HTML
+  Rendering days/new.html.erb within layouts/application
+  Rendered days/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 413)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 5180)
+
+
+Started POST "/days" for ::1 at 2021-01-07 03:01:36 +0900
+Processing by DaysController#create as HTML
+  Parameters: {"authenticity_token"=>"wLOm2Fwfn/s9xoj60xC9gN+2Y1MkyI3D+yTvTxAZKXG536SWQrgEBFLBXQx9DkEIpHAyBWeAEmC5NsqFNUIXRA==", "day"=>{"day"=>"2021-01-14", "contents"=>"ooooo"}, "commit"=>"Create Day"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/days_controller.rb:12:in `create'
+  [1m[36mDay Create (0.9ms)[0m  [1m[32mINSERT INTO "days" ("created_at", "updated_at", "day", "contents") VALUES (?, ?, ?, ?)[0m  [["created_at", "2021-01-06 18:01:36.641213"], ["updated_at", "2021-01-06 18:01:36.641213"], ["day", "2021-01-14"], ["contents", "ooooo"]]
+  ↳ app/controllers/days_controller.rb:12:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/days_controller.rb:12:in `create'
+Redirected to http://localhost:3000/workplaces/index
+Completed 302 Found in 10ms (ActiveRecord: 2.0ms | Allocations: 2682)
+
+
+Started GET "/workplaces/index" for ::1 at 2021-01-07 03:01:36 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 708)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 5472)
+
+
+Started GET "/days/new" for ::1 at 2021-01-07 03:01:43 +0900
+Processing by DaysController#new as HTML
+  Rendering days/new.html.erb within layouts/application
+  Rendered days/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 413)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 5171)
+
+
+Started POST "/days" for ::1 at 2021-01-07 03:02:20 +0900
+Processing by DaysController#create as HTML
+  Parameters: {"authenticity_token"=>"etIet2+RGFutY6Z9Zr78aSf/r9YP5i1BAj4Syb07QSIDvhz5cTaDpMJkc4vIoADhXDn+gEyusuJALDcDmGB/Fw==", "day"=>{"day"=>"2021-01-11", "contents"=>"募集！"}, "commit"=>"Create Day"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/days_controller.rb:12:in `create'
+  [1m[36mDay Create (0.9ms)[0m  [1m[32mINSERT INTO "days" ("created_at", "updated_at", "day", "contents") VALUES (?, ?, ?, ?)[0m  [["created_at", "2021-01-06 18:02:20.881738"], ["updated_at", "2021-01-06 18:02:20.881738"], ["day", "2021-01-11"], ["contents", "募集！"]]
+  ↳ app/controllers/days_controller.rb:12:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/days_controller.rb:12:in `create'
+Redirected to http://localhost:3000/workplaces/index
+Completed 302 Found in 7ms (ActiveRecord: 1.9ms | Allocations: 2687)
+
+
+Started GET "/workplaces/index" for ::1 at 2021-01-07 03:02:20 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 731)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.1ms | Allocations: 5492)
+
+
+Started GET "/" for ::1 at 2021-01-07 03:08:48 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.7ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 26.1ms | Allocations: 6633)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 93ms (Views: 73.5ms | ActiveRecord: 1.6ms | Allocations: 18228)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-01-07 03:08:51 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 215)
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 549)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 19.4ms | Allocations: 4956)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 87ms (Views: 30.7ms | ActiveRecord: 1.5ms | Allocations: 18976)
+
+
+Started GET "/" for ::1 at 2021-01-07 03:14:05 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/workplaces/index.html.erb:16
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 740)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.2ms | Allocations: 5506)
+
+

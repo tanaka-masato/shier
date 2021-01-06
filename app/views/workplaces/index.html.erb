@@ -1,2 +1,24 @@
 <h1>Workplaces#index</h1>
 <p>Find me in app/views/workplaces/index.html.erb</p>
+
+<header>
+</header>
+
+<div class="myshop">
+  <img src="" alt="">
+  <p>マクドナルド中川</p>
+  <button>退会</button>
+</div>
+
+<p>シフト一覧</p>
+
+<div class="shift">
+  <% @days.each do |day| %>
+    <%= day.day %>
+    <%= day.contents %>
+  <% end %>
+</div>
+
+<div class="post">
+  <%= link_to '+', '/days/new' %>
+</div>
