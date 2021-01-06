@@ -1,36 +1,108 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-.workplaces{
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.workplaces {
   h1 {
     color: red;
   }
 }
 
-
-
-
-
-.days{
-
+.days {
 }
 
+.comments {
+}
 
+.registrations {
+  max-width: 700px;
+  margin: 0 auto;
+}
 
+.registerContainer {
+  text-align: center;
+}
 
+.registerNewTop {
+  height: 105vw;
+  background: image-url("shierMain.png");
+  background-size: cover;
+  position: relative;
+}
 
-.comments{
-  
+.registerNewTitle {
+  position: absolute;
+  top: 8vw;
+  right: 20vw;
+  font-family: "ONE DAY";
+  font-size: 10vw;
+}
+
+.registerNewSubtitle {
+  position: absolute;
+  top: 25vw;
+  right: 3vw;
+}
+
+.registerForMailTitle,
+.registerForGoogle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7vw auto;
+  width: 70%;
+  border: solid 1px #cecece;
+  border-radius: 7px;
+}
+
+.ragisterForGoogleImg {
+  margin: 0 7vw 0 0;
+}
+
+.ragisterForMailImg {
+  margin: 0 4vw 0 0;
+}
+
+.registerForMailField {
+  margin: 8vw auto;
+}
+
+input[type="email"] {
+  width: 70%;
+  height: 8vw;
+  border-radius: 7px;
+  border: none;
+  border: solid 1px #cecece;
+}
+
+input[type="text"] {
+  width: 70%;
+  height: 8vw;
+  border-radius: 7px;
+  border: none;
+  border: solid 1px #cecece;
+}
+
+input[type="password"] {
+  width: 70%;
+  height: 8vw;
+  border-radius: 7px;
+  border: none;
+  border: solid 1px #cecece;
+}
+
+.registerForMailActions {
+  margin: 10vw auto 30vw auto;
+}
+
+input[type="submit"] {
+  width: 22%;
+  height: 10vw;
+  background-color: #3bb2db;
+  color: #ffff;
+  border: none;
+  font-size: 5vw;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
 }
