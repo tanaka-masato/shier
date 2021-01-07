@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_06_175348) do
+ActiveRecord::Schema.define(version: 2021_01_07_125822) do
 
   create_table "comments", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -26,6 +26,21 @@ ActiveRecord::Schema.define(version: 2021_01_06_175348) do
     t.string "comments_id"
     t.date "day"
     t.text "contents"
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "user_places", force: :cascade do |t|
+    t.integer "place_id"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["place_id"], name: "index_user_places_on_place_id"
+    t.index ["user_id"], name: "index_user_places_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -49,4 +64,5 @@ ActiveRecord::Schema.define(version: 2021_01_06_175348) do
     t.string "day_id"
   end
 
+  add_foreign_key "user_places", "places"
 end

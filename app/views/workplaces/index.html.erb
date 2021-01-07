@@ -2,7 +2,14 @@
 <p>Find me in app/views/workplaces/index.html.erb</p>
 
 <header>
+  <div class="post">
+    <%= link_to '+', '/workplaces/new' %>
+  </div>
 </header>
+
+<% @workplaces.each do |workplace| %>
+  <% workplaces.name %>
+<% end %>
 
 <div class="myshop">
   <img src="" alt="">
