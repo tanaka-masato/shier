@@ -15,6 +15,9 @@ body {
 .comments {
 }
 
+// Usersの中身のCSS
+
+// 新規登録のCSS
 .registrations {
   max-width: 700px;
   margin: 0 auto;
@@ -71,7 +74,6 @@ body {
 input[type="email"] {
   width: 70%;
   height: 8vw;
-  border-radius: 7px;
   border: none;
   border: solid 1px #cecece;
 }
@@ -79,7 +81,6 @@ input[type="email"] {
 input[type="text"] {
   width: 70%;
   height: 8vw;
-  border-radius: 7px;
   border: none;
   border: solid 1px #cecece;
 }
@@ -87,7 +88,6 @@ input[type="text"] {
 input[type="password"] {
   width: 70%;
   height: 8vw;
-  border-radius: 7px;
   border: none;
   border: solid 1px #cecece;
 }
@@ -97,7 +97,7 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-  width: 22%;
+  width: 25%;
   height: 10vw;
   background-color: #3bb2db;
   color: #ffff;
@@ -105,4 +105,33 @@ input[type="submit"] {
   font-size: 5vw;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
     "游ゴシック", "Yu Gothic", sans-serif;
+}
+// 新規登録はここまで
+
+// ログインのCSS
+.sessions {
+  max-width: 700px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.loginContainer {
+  text-align: center;
+}
+
+.loginTitle {
+  font-family: "ONE DAY";
+  font-size: 10vw;
+  margin: 15vw auto;
+}
+
+.loginForMailField {
+  margin: 10vw auto;
+}
+
+.loginDownImg {
+  height: 50vh;
+  background: image-url("shierMain.png");
+  background-size: cover;
+  margin: 10vw auto 0 auto;
 }
