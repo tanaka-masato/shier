@@ -19,7 +19,7 @@
 <div class="shift">
   <% @days.each do |day| %>
     <%= day.day %>
-    <%= day.contents %>
+    <%= link_to "#{day.contents}", day_path(day.id) %>
   <% end %>
 </div>
 
