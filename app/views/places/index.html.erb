@@ -5,11 +5,11 @@
 </header>
 
 <% @places.each do |place| %>
+  <%= attachment_image_tag place, :image, format: 'jpeg', size: "100x100" %>
   <%= place.name %>
 <% end %>
 
 <div class="myshop">
-  <img src="" alt="">
   <p>マクドナルド中川</p>
   <button>退会</button>
 </div>

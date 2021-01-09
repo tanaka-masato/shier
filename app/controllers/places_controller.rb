@@ -12,12 +12,15 @@ class PlacesController < ApplicationController
     @place = Place.new(place_params)
     if @place.save
       redirect_to places_path
+    else
+      render 'new'
+      flash[:danger] = "エラー"
     end
   end
 
   private
 	def place_params
-		params.require(:place).permit(:name)
+		params.require(:place).permit(:name, :image)
   end
   
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_08_135458) do
+ActiveRecord::Schema.define(version: 2021_01_08_153452) do
 
   create_table "comments", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -33,11 +33,12 @@ ActiveRecord::Schema.define(version: 2021_01_08_135458) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "image_id"
   end
 
   create_table "user_places", force: :cascade do |t|
-    t.integer "place_id"
-    t.integer "user_id"
+    t.integer "user_id", null: false
+    t.integer "place_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["place_id"], name: "index_user_places_on_place_id"
@@ -66,4 +67,5 @@ ActiveRecord::Schema.define(version: 2021_01_08_135458) do
   end
 
   add_foreign_key "user_places", "places"
+  add_foreign_key "user_places", "users"
 end

@@ -3360,3 +3360,1118 @@ Processing by DaysController#show as HTML
 Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 6421)
 
 
+Started GET "/places/new" for ::1 at 2021-01-08 23:54:51 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 3138)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 32.0ms | ActiveRecord: 0.6ms | Allocations: 19148)
+
+
+Started POST "/places" for ::1 at 2021-01-08 23:54:57 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"O0TXCdTmbCBs51S2iEoKf5zJY4DZeUn/8izfmcNOXcyCEfEMuoty9LZr/48EEhiHMxBXvCe16oUNgljMPabC1A==", "place"=>{"name"=>"e"}, "commit"=>"Create Place"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Create (0.6ms)[0m  [1m[32mINSERT INTO "places" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "e"], ["created_at", "2021-01-08 14:54:57.010296"], ["updated_at", "2021-01-08 14:54:57.010296"]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+Redirected to http://localhost:3000/places
+Completed 302 Found in 9ms (ActiveRecord: 1.7ms | Allocations: 2960)
+
+
+Started GET "/places" for ::1 at 2021-01-08 23:54:57 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 7562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 24.5ms | ActiveRecord: 1.3ms | Allocations: 13023)
+
+
+Started GET "/places/new" for ::1 at 2021-01-08 23:55:05 +0900
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 374)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 5292)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddImageIdToPlaces (20210108145621)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "places" ADD "image_id" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210108145621"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/places/new" for ::1 at 2021-01-08 23:57:28 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 15.0ms | Allocations: 3151)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.6ms | Allocations: 9759)
+
+
+  
+ActionView::Template::Error (undefined method `image_attachment_definition' for #<Place:0x00007fbe2de0dba0>):
+    1: 
+    2: <%= form_with model: @place, local: true do |f| %>
+    3:   <%= f.attachment_field :image %>
+    4:   <%= f.text_field :name %>
+    5:   <%#= f.text_field :contents %>
+    6:   <%= f.submit %>
+  
+app/views/places/new.html.erb:3
+app/views/places/new.html.erb:2
+Started GET "/places/new" for ::1 at 2021-01-08 23:57:50 +0900
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 2589)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 3944)
+
+
+  
+ActionView::Template::Error (undefined method `image_attachment_definition' for #<Place:0x00007fbe2cabe450>):
+    1: 
+    2: <%= form_with model: @place, local: true do |f| %>
+    3:   <%= f.attachment_field :image %>
+    4:   <%= f.text_field :name %>
+    5:   <%#= f.text_field :contents %>
+    6:   <%= f.submit %>
+  
+app/views/places/new.html.erb:3
+app/views/places/new.html.erb:2
+Started GET "/places/new" for ::1 at 2021-01-08 23:58:39 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2623)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 16.2ms | ActiveRecord: 0.5ms | Allocations: 16015)
+
+
+Started GET "/" for ::1 at 2021-01-08 23:58:49 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 7537)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 1.0ms | Allocations: 13022)
+
+
+Started GET "/" for ::1 at 2021-01-08 23:59:51 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:21
+  Rendered places/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 2005)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.3ms | Allocations: 7983)
+
+
+Started GET "/" for ::1 at 2021-01-09 00:00:26 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:21
+  Rendered places/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2030)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.3ms | Allocations: 7992)
+
+
+Started GET "/places/new" for ::1 at 2021-01-09 00:00:38 +0900
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 702)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 5742)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:00:51 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"Nz2ufX87Wj64zCPvydskL/vcxKpNGo5IB6Qrv6hnmcCfESI3dz5cxrUvHHJdIl6Ierr+m5dSjUetAfFY2QQQfg==", "place"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbe30304030 @tempfile=#<Tempfile:/var/folders/20/91kq89195097znt4wb9_8jhr0000gn/T/RackMultipart20210109-23749-r8y0tt.jpg>, @original_filename="RAWR.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"place[image]\"; filename=\"RAWR.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"aaaaaaaa"}, "commit"=>"Create Place"}
+[31mUnpermitted parameter: :image[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Create (0.5ms)[0m  [1m[32mINSERT INTO "places" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "aaaaaaaa"], ["created_at", "2021-01-08 15:00:51.283859"], ["updated_at", "2021-01-08 15:00:51.283859"]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+Redirected to http://localhost:3000/places
+Completed 302 Found in 15ms (ActiveRecord: 1.8ms | Allocations: 3031)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:00:51 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:21
+  Rendered places/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1764)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.3ms | Allocations: 6674)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:01:16 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.7ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:22
+  Rendered places/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.8ms | Allocations: 8068)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:04:29 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.5ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.6ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:22
+  Rendered places/index.html.erb within layouts/application (Duration: 19.8ms | Allocations: 11747)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 74.1ms | ActiveRecord: 2.0ms | Allocations: 25362)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:04:29 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:22
+  Rendered places/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1802)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 6716)
+
+
+Started GET "/places/new" for ::1 at 2021-01-09 00:04:31 +0900
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 16.6ms | Allocations: 2750)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.0ms | Allocations: 7818)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:04:40 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"vhLJzLmx8UnoQZKXV//hYCCmzqy2yVGNqbG9ttNTgTAWPkWGsbT3seWirQrDBpvHocD0nWyBUoIDFGdRojAIjg==", "place"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd189873658 @tempfile=#<Tempfile:/var/folders/20/91kq89195097znt4wb9_8jhr0000gn/T/RackMultipart20210109-24883-1iy5d6r.png>, @original_filename="RAWR八千代緑が丘 (1).png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"place[image]\"; filename=\"RAWR\xE5\x85\xAB\xE5\x8D\x83\xE4\xBB\xA3\xE7\xB7\x91\xE3\x81\x8B\xE3\x82\x99\xE4\xB8\x98 (1).png\"\r\nContent-Type: image/png\r\n">, "name"=>"eea"}, "commit"=>"Create Place"}
+[31mUnpermitted parameter: :image[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Create (0.9ms)[0m  [1m[32mINSERT INTO "places" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "eea"], ["created_at", "2021-01-08 15:04:40.422966"], ["updated_at", "2021-01-08 15:04:40.422966"]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+Redirected to http://localhost:3000/places
+Completed 302 Found in 12ms (ActiveRecord: 2.1ms | Allocations: 3049)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:04:40 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:22
+  Rendered places/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1840)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.3ms | Allocations: 6760)
+
+
+Started GET "/places/new" for ::1 at 2021-01-09 00:05:28 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 3202)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 35.9ms | ActiveRecord: 0.5ms | Allocations: 20059)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:05:34 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"c8IC9QgO2py8s97KCMPBgUTgErN+4EUrk5eBFW8t4ljb7o6/AAvcZLFQ4VecOrsmxYYogqSoRiQ5MlvyHk5r5g==", "place"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f93c8f90598 @tempfile=#<Tempfile:/var/folders/20/91kq89195097znt4wb9_8jhr0000gn/T/RackMultipart20210109-25090-7dzpal.png>, @original_filename="RAWR八千代緑が丘 (1).png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"place[image]\"; filename=\"RAWR\xE5\x85\xAB\xE5\x8D\x83\xE4\xBB\xA3\xE7\xB7\x91\xE3\x81\x8B\xE3\x82\x99\xE4\xB8\x98 (1).png\"\r\nContent-Type: image/png\r\n">, "name"=>"a"}, "commit"=>"Create Place"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Create (0.7ms)[0m  [1m[32mINSERT INTO "places" ("name", "created_at", "updated_at", "image_id") VALUES (?, ?, ?, ?)[0m  [["name", "a"], ["created_at", "2021-01-08 15:05:34.604478"], ["updated_at", "2021-01-08 15:05:34.604478"], ["image_id", "b7b12ccb1e23b2c9980af6e3ee181b59cdefff536b61f1de90e58b0856fd"]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+Redirected to http://localhost:3000/places
+Completed 302 Found in 12ms (ActiveRecord: 1.6ms | Allocations: 3500)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:05:34 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:22
+  Rendered places/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 7963)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 1.2ms | Allocations: 13405)
+
+
+Started GET "/attachments/a2f9c9935eab07cd749847e05851b5a18105fab4/store/b7b12ccb1e23b2c9980af6e3ee181b59cdefff536b61f1de90e58b0856fd/image.jpeg" for ::1 at 2021-01-09 00:05:34 +0900
+Refile::App: [2021-01-09 00:05:34 +0900] GET "/a2f9c9935eab07cd749847e05851b5a18105fab4/store/b7b12ccb1e23b2c9980af6e3ee181b59cdefff536b61f1de90e58b0856fd/image.jpeg" 200 15.6ms
+
+Started GET "/places" for ::1 at 2021-01-09 00:05:51 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:21
+  Rendered places/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2289)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.3ms | Allocations: 8255)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:09:08 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 1882)
+
+
+  
+SyntaxError (/Users/masato/EnGii/shier/開発/shier/app/models/place.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+  validates :name, presence :true, uniqueness: true
+                            ^):
+  
+app/models/place.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/place.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/place.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:09:08 +0900
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1227)
+
+
+  
+SyntaxError (/Users/masato/EnGii/shier/開発/shier/app/models/place.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+  validates :name, presence :true, uniqueness: true
+                            ^):
+  
+app/models/place.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/place.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/place.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:09:09 +0900
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1220)
+
+
+  
+SyntaxError (/Users/masato/EnGii/shier/開発/shier/app/models/place.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+  validates :name, presence :true, uniqueness: true
+                            ^):
+  
+app/models/place.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/place.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/place.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:09:34 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:21
+  Rendered places/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 11804)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 44.9ms | ActiveRecord: 1.7ms | Allocations: 22849)
+
+
+Started GET "/places/new" for ::1 at 2021-01-09 00:09:38 +0900
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2757)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 7821)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:09:40 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"UHAyJrXwrk7l3+C8qBG99D+95RmVqWeVjephrLm9A2D4XL5svfWotug83yE86MdTvtvfKE/hZJonT7tLyN6K3g==", "place"=>{"image"=>"{}", "name"=>"a"}, "commit"=>"Create Place"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "places" WHERE "places"."name" = ? LIMIT ?[0m  [["name", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+No template found for PlacesController#create, rendering head :no_content
+Completed 204 No Content in 13ms (ActiveRecord: 0.7ms | Allocations: 6191)
+
+
+Started GET "/places/new" for ::1 at 2021-01-09 00:09:48 +0900
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 517)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 5427)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:09:49 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"JRYUka/xsuFfAMLvkitwLhax0qS6aMVq+ciCg802yuacQzKUwZysNYWMadYec2LWuWjmmESkZhAGZgXWM95V/g==", "place"=>{"image"=>"{}", "name"=>""}, "commit"=>"Create Place"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "places" WHERE "places"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+No template found for PlacesController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.5ms | Allocations: 3864)
+
+
+Started GET "/places/new" for ::1 at 2021-01-09 00:09:55 +0900
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 517)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5422)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:09:57 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"6ul3hJx9JOy8ivNzCg9q5UQnRKh5kAmInI60RyHYTb5TvFGB8hA6OGYGWEqGV3gd6/5wlIdcqvJjIDMS3zDSpg==", "place"=>{"image"=>"{}", "name"=>"dddd"}, "commit"=>"Create Place"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "places" WHERE "places"."name" = ? LIMIT ?[0m  [["name", "dddd"], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Create (0.4ms)[0m  [1m[32mINSERT INTO "places" ("name", "created_at", "updated_at", "image_id") VALUES (?, ?, ?, ?)[0m  [["name", "dddd"], ["created_at", "2021-01-08 15:09:57.863492"], ["updated_at", "2021-01-08 15:09:57.863492"], ["image_id", nil]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+Redirected to http://localhost:3000/places
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms | Allocations: 4018)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:09:57 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:21
+  Rendered places/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2018)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 6930)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:15:21 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:21
+  Rendered places/index.html.erb within layouts/application (Duration: 19.9ms | Allocations: 11992)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 80ms (Views: 66.2ms | ActiveRecord: 1.3ms | Allocations: 25905)
+
+
+Started GET "/places/new" for ::1 at 2021-01-09 00:15:22 +0900
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2796)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 7859)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:15:24 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"at+Pdiaf5aFCwpyL+H6/m4Nt+gv3UmGyRNYw5ta6EtLC8wM8LprjWU8hoxZsh8U8AgvAOi0aYr3uc+oBp9mbbA==", "place"=>{"image"=>"{}", "name"=>""}, "commit"=>"Create Place"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "places" WHERE "places"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 536)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 16.8ms | ActiveRecord: 0.3ms | Allocations: 9446)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:15:29 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"cdDm6ZaT9zf9sI565HxMc//SxGtU/1EGScit2p5NFfXIhcDs+P7p4yc8JUNoJF6LUAvwV6oz8ny2ZiqPYKWK7Q==", "place"=>{"image"=>"{}", "name"=>""}, "commit"=>"Create Place"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "places" WHERE "places"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 532)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 13.3ms | ActiveRecord: 0.3ms | Allocations: 8780)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:15:31 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"nxgccLyTThsan2h4s35K/io+b1JAOJvtInGUYIliS58mTTp10v5Qz8ATw0E/JlgGhedbbr70OJfd3xM1d4rUhw==", "place"=>{"image"=>"{}", "name"=>""}, "commit"=>"Create Place"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "places" WHERE "places"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 532)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 0.4ms | Allocations: 8780)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:15:31 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"DrHsXKxhrdprVmTxBAmIn7NF084EvlRpdYUr4X4TSYK35MpZwgyzDrHaz8iIUZpnHJzn8vpy9xOKK6y0gPvWmg==", "place"=>{"image"=>"{}", "name"=>""}, "commit"=>"Create Place"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "places" WHERE "places"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 531)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 29.0ms | ActiveRecord: 0.3ms | Allocations: 8767)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:15:34 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"ZAl4Beaap8UBjCnFW0GhNBNNWO6vAUufpZXvPWBRz3HdXF4AiPe5EdsAgvzXGbPMvJRs0lHN6OVaO2honrlQaQ==", "place"=>{"image"=>"{}", "name"=>"a"}, "commit"=>"Create Place"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "places" WHERE "places"."name" = ? LIMIT ?[0m  [["name", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 532)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 0.5ms | Allocations: 8834)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:15:46 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"fQguMA5TYmmcpS5XmX9jkhgRm+aYLK+2qFmd/XnB2sTEXQg1YD58vUYphW4VJ3Fqt8iv2mbgDMxX9xqohylF3A==", "place"=>{"image"=>"{}", "name"=>"adddddd"}, "commit"=>"Create Place"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "places" WHERE "places"."name" = ? LIMIT ?[0m  [["name", "adddddd"], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[36mPlace Create (0.6ms)[0m  [1m[32mINSERT INTO "places" ("name", "created_at", "updated_at", "image_id") VALUES (?, ?, ?, ?)[0m  [["name", "adddddd"], ["created_at", "2021-01-08 15:15:46.314804"], ["updated_at", "2021-01-08 15:15:46.314804"], ["image_id", nil]]
+  ↳ app/controllers/places_controller.rb:13:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/places_controller.rb:13:in `create'
+Redirected to http://localhost:3000/places
+Completed 302 Found in 9ms (ActiveRecord: 1.8ms | Allocations: 3999)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:15:46 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:21
+  Rendered places/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2050)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.4ms | Allocations: 6964)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:21:23 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 2084)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:24:05 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1726)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:24:06 +0900
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1074)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:24:16 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 1878)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:24:17 +0900
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1121)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:24:18 +0900
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1082)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to UserPlaces (20210108153312)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "user_places"[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210108153312"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUserPlaces (20210108153452)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "user_places" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "place_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_8071a77426"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_74c85693d2"
+FOREIGN KEY ("place_id")
+  REFERENCES "places" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_user_id" ON "user_places" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_place_id" ON "user_places" ("place_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210108153452"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/places" for ::1 at 2021-01-09 00:35:53 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 1878)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:35:54 +0900
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1121)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "comment" text, "user_id" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "days"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "days" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "day_img_id" varchar, "comments_id" varchar, "day" date, "contents" text, "image_id" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "places"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "places" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "image_id" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_places"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "user_places" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "place_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_place_id" ON "user_places" ("place_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_user_id" ON "user_places" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "work_places"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "work_places" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "title" integer, "day_id" varchar)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "auser_places" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "place_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_auser_places_on_user_id" ON "auser_places" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_auser_places_on_place_id" ON "auser_places" ("place_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "auser_places" ("id","user_id","place_id","created_at","updated_at")
+                     SELECT "id","user_id","place_id","created_at","updated_at" FROM "user_places"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "user_places"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "user_places" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "place_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_74c85693d2"
+FOREIGN KEY ("place_id")
+  REFERENCES "places" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_place_id" ON "user_places" ("place_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_user_id" ON "user_places" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "user_places" ("id","user_id","place_id","created_at","updated_at")
+                     SELECT "id","user_id","place_id","created_at","updated_at" FROM "auser_places"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "auser_places"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "auser_places" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "place_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_auser_places_on_user_id" ON "auser_places" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_auser_places_on_place_id" ON "auser_places" ("place_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "auser_places" ("id","user_id","place_id","created_at","updated_at")
+                     SELECT "id","user_id","place_id","created_at","updated_at" FROM "user_places"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "user_places"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "user_places" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "place_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_74c85693d2"
+FOREIGN KEY ("place_id")
+  REFERENCES "places" ("id")
+, CONSTRAINT "fk_rails_8071a77426"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_place_id" ON "user_places" ("place_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_user_id" ON "user_places" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "user_places" ("id","user_id","place_id","created_at","updated_at")
+                     SELECT "id","user_id","place_id","created_at","updated_at" FROM "auser_places"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "auser_places"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210108153452)[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201031142149),
+(20201031142213),
+(20201031142232),
+(20201031170349),
+(20210106175348),
+(20210107093643),
+(20210108135458),
+(20210108145621),
+(20210108153312);
+
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-01-08 15:36:49.689504"], ["updated_at", "2021-01-08 15:36:49.689504"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "a89607fd9f44f018de514e3fbf2f59091e26affc"], ["created_at", "2021-01-08 15:36:49.697112"], ["updated_at", "2021-01-08 15:36:49.697112"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "comment" text, "user_id" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "days"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "days" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "day_img_id" varchar, "comments_id" varchar, "day" date, "contents" text, "image_id" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "places"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "places" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "image_id" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_places"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "user_places" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "place_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_place_id" ON "user_places" ("place_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_user_id" ON "user_places" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "work_places"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "work_places" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "title" integer, "day_id" varchar)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "auser_places" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "place_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_auser_places_on_user_id" ON "auser_places" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_auser_places_on_place_id" ON "auser_places" ("place_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "auser_places" ("id","user_id","place_id","created_at","updated_at")
+                     SELECT "id","user_id","place_id","created_at","updated_at" FROM "user_places"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "user_places"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "user_places" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "place_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_74c85693d2"
+FOREIGN KEY ("place_id")
+  REFERENCES "places" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_place_id" ON "user_places" ("place_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_user_id" ON "user_places" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "user_places" ("id","user_id","place_id","created_at","updated_at")
+                     SELECT "id","user_id","place_id","created_at","updated_at" FROM "auser_places"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "auser_places"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "auser_places" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "place_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_auser_places_on_user_id" ON "auser_places" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_auser_places_on_place_id" ON "auser_places" ("place_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "auser_places" ("id","user_id","place_id","created_at","updated_at")
+                     SELECT "id","user_id","place_id","created_at","updated_at" FROM "user_places"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "user_places"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "user_places" ("id" integer NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "place_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_74c85693d2"
+FOREIGN KEY ("place_id")
+  REFERENCES "places" ("id")
+, CONSTRAINT "fk_rails_8071a77426"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_place_id" ON "user_places" ("place_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_places_on_user_id" ON "user_places" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "user_places" ("id","user_id","place_id","created_at","updated_at")
+                     SELECT "id","user_id","place_id","created_at","updated_at" FROM "auser_places"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "auser_places"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210108153452)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201031142149),
+(20201031142213),
+(20201031142232),
+(20201031170349),
+(20210106175348),
+(20210107093643),
+(20210108135458),
+(20210108145621),
+(20210108153312);
+
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-01-08 15:36:49.813919"], ["updated_at", "2021-01-08 15:36:49.813919"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-01-08 15:36:49.819457"], ["key", "environment"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "a89607fd9f44f018de514e3fbf2f59091e26affc"], ["created_at", "2021-01-08 15:36:49.826010"], ["updated_at", "2021-01-08 15:36:49.826010"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/places" for ::1 at 2021-01-09 00:37:00 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 1878)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:37:01 +0900
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1111)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:37:03 +0900
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1082)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:37:03 +0900
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1082)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:37:04 +0900
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1082)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:37:10 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2469)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 23.2ms | ActiveRecord: 0.6ms | Allocations: 13570)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:37:22 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1777)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:38:52 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2122)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 0.8ms | Allocations: 9098)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:40:49 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1735)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:41:14 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2119)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.9ms | Allocations: 9081)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:54:49 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2069)
+
+
+  
+ArgumentError (Unknown key: :througt. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :table_name, :before_add, :after_add, :before_remove, :after_remove, :extend, :primary_key, :dependent, :as, :through, :source, :source_type, :inverse_of, :counter_cache, :join_table, :foreign_type, :index_errors):
+  
+app/models/place.rb:3:in `<class:Place>'
+app/models/place.rb:1:in `<main>'
+app/controllers/places_controller.rb:4:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:54:57 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#index as HTML
+Completed 404 Not Found in 7ms (ActiveRecord: 1.0ms | Allocations: 3569)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Place without an ID):
+  
+app/controllers/places_controller.rb:5:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:55:21 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+Completed 404 Not Found in 34ms (ActiveRecord: 0.6ms | Allocations: 3528)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Place without an ID):
+  
+app/controllers/places_controller.rb:5:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:56:38 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+Completed 404 Not Found in 33ms (ActiveRecord: 0.5ms | Allocations: 3528)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Place without an ID):
+  
+app/controllers/places_controller.rb:5:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:56:59 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2468)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 21.0ms | ActiveRecord: 0.8ms | Allocations: 14010)
+
+
+Started GET "/places/new" for ::1 at 2021-01-09 00:57:03 +0900
+Processing by PlacesController#new as HTML
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2875)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 19.2ms | ActiveRecord: 1.0ms | Allocations: 11276)
+
+
+Started POST "/places" for ::1 at 2021-01-09 00:57:05 +0900
+Processing by PlacesController#create as HTML
+  Parameters: {"authenticity_token"=>"IueMG8n6092uY0H2NkJ4tid+8acziwvZiyGAmN444IaKywBRwf/VJaOAfmuiuwIRphjLlunDCNYhhFp/r1tpOA==", "place"=>{"image"=>"{}", "name"=>"d"}, "commit"=>"Create Place"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:14:in `create'
+  [1m[36mPlace Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "places" WHERE "places"."name" = ? LIMIT ?[0m  [["name", "d"], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:14:in `create'
+  [1m[36mPlace Create (0.5ms)[0m  [1m[32mINSERT INTO "places" ("name", "created_at", "updated_at", "image_id") VALUES (?, ?, ?, ?)[0m  [["name", "d"], ["created_at", "2021-01-08 15:57:05.934016"], ["updated_at", "2021-01-08 15:57:05.934016"], ["image_id", nil]]
+  ↳ app/controllers/places_controller.rb:14:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/places_controller.rb:14:in `create'
+Redirected to http://localhost:3000/places
+Completed 302 Found in 9ms (ActiveRecord: 1.6ms | Allocations: 4377)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:57:05 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1274)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 6173)
+
+
+Started GET "/places" for ::1 at 2021-01-09 00:57:12 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#index as HTML
+Completed 404 Not Found in 5ms (ActiveRecord: 0.5ms | Allocations: 3076)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Place without an ID):
+  
+app/controllers/places_controller.rb:5:in `index'
+Started GET "/places" for ::1 at 2021-01-09 00:57:32 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 5367)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 1.1ms | Allocations: 12255)
+
+
