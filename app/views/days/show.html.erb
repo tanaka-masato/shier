@@ -1,0 +1,19 @@
+<%= @day.day %>
+<%= @day.contents %>
+<%= attachment_image_tag @day, :image, format: 'jpeg', size: "100x100" %>
+
+<div id="commentsContainer">
+  <% @comments.each do |comment| %>
+      <div class="commentsItem">
+        <%= comment.comment %>
+      </div>
+    <% end %>
+</div>
+<div id="commentsFormContainer">
+  <%= form_with model: @comment, url: day_path do |form| %>
+    <%= form.text_area :comment, id: "comment" %>
+    <%= form.hidden_field :day_id, :value => @day.id %>
+    <%= form.submit "登録する" %>
+  <% end %>
+</div>
+
