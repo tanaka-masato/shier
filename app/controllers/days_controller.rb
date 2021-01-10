@@ -8,11 +8,11 @@ class DaysController < ApplicationController
   end
 
   def show
-    @day = Day.find_by(params[:id])
-    @comment = Comment.new(comment: params[:comment])
-    @comment.save
-    @comments = @day.comments
-
+    @day = Day.find(params[:id])
+    @comment = Comment.new
+    #@comments = @day.comments
+    @comments = Comment.where(day_id: @coomment)
+    @commentall = Comment.where(day_id: @day)
   end
   
   def create

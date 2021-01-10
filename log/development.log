@@ -7917,3 +7917,2098 @@ Processing by DaysController#show as JS
 Completed 200 OK in 196ms (Views: 148.7ms | ActiveRecord: 1.0ms | Allocations: 7287)
 
 
+Started GET "/" for ::1 at 2021-01-11 00:52:24 +0900
+Started GET "/" for ::1 at 2021-01-11 00:52:24 +0900
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.5ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.5ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  ↳ app/views/places/index.html.erb:7
+  Rendered places/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 8739)
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 26.3ms | Allocations: 9526)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 239ms (Views: 213.8ms | ActiveRecord: 0.3ms | Allocations: 96098)
+
+
+Started GET "/" for ::1 at 2021-01-11 00:52:24 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 264ms (Views: 245.0ms | ActiveRecord: 1.8ms | Allocations: 101448)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.3ms | Allocations: 7420)
+
+
+Started GET "/" for ::1 at 2021-01-11 00:52:24 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1335)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.3ms | Allocations: 6212)
+
+
+Started GET "/" for ::1 at 2021-01-11 00:52:24 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1335)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.3ms | Allocations: 6209)
+
+
+Started GET "/" for ::1 at 2021-01-11 00:52:25 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1344)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 6235)
+
+
+Started GET "/" for ::1 at 2021-01-11 00:52:25 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1335)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.4ms | Allocations: 6214)
+
+
+Started GET "/days/1" for ::1 at 2021-01-11 00:52:26 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 16.9ms | Allocations: 4007)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 23.3ms | ActiveRecord: 1.6ms | Allocations: 27488)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 00:52:27 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 00:52:27 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 5.9ms
+
+Started POST "/days/1" for ::1 at 2021-01-11 00:52:29 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"kJsvMTnJITIa5An6RyjCsmRYtUHBtARqSWANTc1wsTlt9AbmMj+SFWfLaSPHL9ZfEQV/emjfNYGVysq4qREZMQ==", "comment"=>{"comment"=>"aa", "day_id"=>"1"}, "commit"=>"登録する", "id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1189)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 0.3ms | Allocations: 8075)
+
+
+Started GET "/days/1" for ::1 at 2021-01-11 00:53:00 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1453)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 0.4ms | Allocations: 9137)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 00:53:00 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 00:53:00 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 1.3ms
+
+Started GET "/days/1" for ::1 at 2021-01-11 00:53:55 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 414.6ms | Allocations: 182110)
+Completed 500 Internal Server Error in 426ms (ActiveRecord: 0.5ms | Allocations: 185255)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `day' for #<#<Class:0x00007f9d4cd96430>:0x00007f9d4cd94270>
+Did you mean?  @day):
+    12: <div id="commentsFormContainer">
+    13:   <%= form_with model: @comment, url: day_path do |form| %>
+    14:     <%= form.text_area :comment, id: "comment" %>
+    15:     <%= form.hidden_field :day_id, :value => day.id %>
+    16:     <%= @day.id %>
+    17:     <%= form.submit "登録する" %>
+    18:   <% end %>
+  
+app/views/days/show.html.erb:15
+app/views/days/show.html.erb:13
+Started GET "/days/1" for ::1 at 2021-01-11 00:54:06 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 18.3ms | ActiveRecord: 0.7ms | Allocations: 9302)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 00:54:06 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 00:54:06 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 1.1ms
+
+Started POST "/days/1" for ::1 at 2021-01-11 00:54:11 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"dVk7WTiI6rV+zk+rQY228Z8z/eSAYPieFgqbQXpbhmDMDB1cVuX0YaRC5JLN1aQJMOrJ2H6sW+TppBwUhLMZeA==", "comment"=>{"comment"=>"ddd", "day_id"=>"1"}, "commit"=>"登録する", "id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1195)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 8035)
+
+
+Started GET "/days/1" for ::1 at 2021-01-11 00:56:33 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 0.5ms | Allocations: 9178)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 00:56:33 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 00:56:33 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 0.7ms
+
+Started POST "/days/1" for ::1 at 2021-01-11 00:56:39 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"mxD4zmVuyvt/T0/bUa/jSZ12TJ473naoYr/bN/+W7CYiRd7LCwPUL6XD5OLd9/GxMq94osUS1dKdEVxiAX5zPg==", "comment"=>{"comment"=>"a", "day_id"=>"1"}, "commit"=>"登録する", "id"=>"1"}
+  [1m[36mDay Load (0.4ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1199)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 24.4ms | ActiveRecord: 0.5ms | Allocations: 8042)
+
+
+Started GET "/days/1" for ::1 at 2021-01-11 01:00:01 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 1.3ms | Allocations: 18431)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/days_controller.rb:15:in `show'
+Started GET "/days/1" for ::1 at 2021-01-11 01:00:16 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.1ms | Allocations: 14971)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/days_controller.rb:15:in `show'
+Started GET "/days/1" for ::1 at 2021-01-11 01:00:23 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 1.6ms | Allocations: 18408)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/days_controller.rb:15:in `show'
+Started GET "/days/1" for ::1 at 2021-01-11 01:00:25 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 2858)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/days_controller.rb:15:in `show'
+Started GET "/days/1" for ::1 at 2021-01-11 01:00:25 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 2788)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/days_controller.rb:15:in `show'
+Started GET "/days/1" for ::1 at 2021-01-11 01:01:02 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2142)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 31.1ms | ActiveRecord: 2.1ms | Allocations: 25646)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 01:01:03 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 01:01:03 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 2.9ms
+
+Started POST "/days/1" for ::1 at 2021-01-11 01:01:08 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"IcHYL1i7IdmQ7/sN+U56UVtLoo9ScxGayaiDv3+f4+WYlP4qNtY/DUpjUDR1Fmip9JKWs6y/suA2BgTqgXd8/Q==", "comment"=>{"comment"=>"aa", "day_id"=>"1"}, "commit"=>"登録する", "id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1096)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 0.4ms | Allocations: 7971)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:01:20 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (2) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1084)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 0.4ms | Allocations: 7770)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 01:01:20 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 01:01:20 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 1.4ms
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:01:23 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"k/2NqDJRh3k0vVX5J/csR8s3MAIpHyUBKnw5PDvO/wEqqKutXDyZre4x/sCrrz6/ZO4EPtfThnvV0r5pxSZgGQ==", "comment"=>{"comment"=>"ee", "day_id"=>"1"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE (2) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1092)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 7802)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:02:26 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1010)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 15.7ms | ActiveRecord: 1.9ms | Allocations: 19859)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:02:32 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"OQhqVy6s5R8YWW7UBkeXCF7squSM3L1XWk6S9dBFigCAXUxSQMH7y8LVxe2KH4Xw8TWe2HIQHi2l4BWgLq0VGA==", "comment"=>{"comment"=>"dd", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 937)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.3ms | Allocations: 7494)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:05:15 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 114ms (Views: 35.7ms | ActiveRecord: 2.4ms | Allocations: 31878)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:05:19 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"EaVenw55vu+OCpFXHIJYz329M54obuC4rME7znjnr6Co8HiaYBSgO1SGOm6Q2ko30mQHotaiQ8JTb7ybhg8wuA==", "comment"=>{"comment"=>"eeeeee", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 943)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 0.6ms | Allocations: 7678)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:05:27 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"EaVenw55vu+OCpFXHIJYz329M54obuC4rME7znjnr6Co8HiaYBSgO1SGOm6Q2ko30mQHotaiQ8JTb7ybhg8wuA==", "comment"=>{"comment"=>"eeeeee", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 7517)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:07:02 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.4ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1912)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 91ms (Views: 29.6ms | ActiveRecord: 1.8ms | Allocations: 31712)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:07:05 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"5zTWh+j9I5zH3p1XVq0YneOwK8M9NJQfH94JVtBqkxZeYfCChpA9SB1SNm7a9QplTGkf/8P4N2XgcI4DLoIMDg==", "comment"=>{"comment"=>"dd", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 943)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 7686)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:07:07 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"5zTWh+j9I5zH3p1XVq0YneOwK8M9NJQfH94JVtBqkxZeYfCChpA9SB1SNm7a9QplTGkf/8P4N2XgcI4DLoIMDg==", "comment"=>{"comment"=>"dd", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 12.2ms | ActiveRecord: 0.3ms | Allocations: 7516)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:07:08 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"5zTWh+j9I5zH3p1XVq0YneOwK8M9NJQfH94JVtBqkxZeYfCChpA9SB1SNm7a9QplTGkf/8P4N2XgcI4DLoIMDg==", "comment"=>{"comment"=>"dd", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 17.5ms | ActiveRecord: 0.3ms | Allocations: 7518)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:07:08 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"5zTWh+j9I5zH3p1XVq0YneOwK8M9NJQfH94JVtBqkxZeYfCChpA9SB1SNm7a9QplTGkf/8P4N2XgcI4DLoIMDg==", "comment"=>{"comment"=>"dd", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 937)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 15.1ms | ActiveRecord: 0.2ms | Allocations: 7493)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:07:08 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"5zTWh+j9I5zH3p1XVq0YneOwK8M9NJQfH94JVtBqkxZeYfCChpA9SB1SNm7a9QplTGkf/8P4N2XgcI4DLoIMDg==", "comment"=>{"comment"=>"dd", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 937)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 13.7ms | ActiveRecord: 0.2ms | Allocations: 7496)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:07:09 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"5zTWh+j9I5zH3p1XVq0YneOwK8M9NJQfH94JVtBqkxZeYfCChpA9SB1SNm7a9QplTGkf/8P4N2XgcI4DLoIMDg==", "comment"=>{"comment"=>"dd", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 937)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 0.3ms | Allocations: 7489)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:07:27 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1010)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 8.0ms | ActiveRecord: 2.3ms | Allocations: 19912)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:07:29 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"im29RpzQ1Tlxed2FUPxxHKZAJ72a2mHGCSv+1sLDAEMzOJtD8r3L7av1drzcpGPkCZkTgWQWwrz2hXmDPCufWw==", "comment"=>{"comment"=>"dd", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 937)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 7496)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:07:40 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1010)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 11.4ms | ActiveRecord: 1.9ms | Allocations: 19854)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:07:43 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"v/8740S5SeUv5A/bjdqX5U9A6ivPrdpmZ9OVA383s8MGqh3mKtRXMfVopOIBgoUd4JneFzFheRyYfRJWgd8s2w==", "comment"=>{"comment"=>"aa", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 937)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 7492)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:07:44 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"v/8740S5SeUv5A/bjdqX5U9A6ivPrdpmZ9OVA383s8MGqh3mKtRXMfVopOIBgoUd4JneFzFheRyYfRJWgd8s2w==", "comment"=>{"comment"=>"aa", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 12.7ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.2ms | Allocations: 7519)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:08:01 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1010)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 9.3ms | ActiveRecord: 1.4ms | Allocations: 19900)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:08:04 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"XQQ0Oeh+Jx3tiYonqJXf6jia4KBRXUur2m6N973hyznkURI8hhM5yTcFIR4kzc0Sl0PUnK+R6NElwAqiQwlUIQ==", "comment"=>{"comment"=>"aa", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 937)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.2ms | Allocations: 7498)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:08:05 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"XQQ0Oeh+Jx3tiYonqJXf6jia4KBRXUur2m6N973hyznkURI8hhM5yTcFIR4kzc0Sl0PUnK+R6NElwAqiQwlUIQ==", "comment"=>{"comment"=>"aa", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 937)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.3ms | Allocations: 7495)
+
+
+Started POST "/days/2" for ::1 at 2021-01-11 01:08:05 +0900
+Processing by DaysController#show as JS
+  Parameters: {"authenticity_token"=>"XQQ0Oeh+Jx3tiYonqJXf6jia4KBRXUur2m6N973hyznkURI8hhM5yTcFIR4kzc0Sl0PUnK+R6NElwAqiQwlUIQ==", "comment"=>{"comment"=>"aa", "day_id"=>"2"}, "commit"=>"登録する", "id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 937)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 0.3ms | Allocations: 7493)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:08:21 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  Rendered days/show.html.erb within layouts/application (Duration: 21.0ms | Allocations: 5534)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.2ms | Allocations: 8550)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= @day.day %>
+<%= @day.contents %>
+<%= attachment_image_tag @day, :image, format: 'jpeg', size: "100x100" %>
+
+<div id="commentsContainer">
+  <% @comments.each do |comment| %>
+      <div class="commentsItem">
+        <%= comment.comment %>
+      </div>
+    <% end %>
+</div>
+<div id="commentsFormContainer">
+  <%= form_with model: @comment,  do |form| %>
+    <%= form.text_area :comment, id: "comment" %>
+    <%= form.hidden_field :day_id, :value => @day.id %>
+    <%= @day.id %>
+    <%= form.submit "登録する" %>
+  <% end %>
+</div>
+
+
+):
+1:    <%= @day.day %>
+2:    <%= @day.contents %>
+3:    <%= attachment_image_tag @day, :image, format: 'jpeg', size: "100x100" %>
+4:    
+5:    <div id="commentsContainer">
+6:      <% @comments.each do |comment| %>
+7:          <div class="commentsItem">
+8:            <%= comment.comment %>
+9:          </div>
+10:        <% end %>
+11:    </div>
+12:    <div id="commentsFormContainer">
+13:      <%= form_with model: @comment,  do |form| %>
+14:        <%= form.text_area :comment, id: "comment" %>
+15:        <%= form.hidden_field :day_id, :value => @day.id %>
+16:        <%= @day.id %>
+17:        <%= form.submit "登録する" %>
+18:      <% end %>
+19:    </div>
+  
+app/views/days/show.html.erb:13: syntax error, unexpected do (for block)
+app/views/days/show.html.erb:23: syntax error, unexpected end, expecting end-of-input
+app/views/days/show.html.erb:13: syntax error, unexpected do (for block)
+app/views/days/show.html.erb:23: syntax error, unexpected end, expecting end-of-input
+app/views/days/show.html.erb:13: syntax error, unexpected do (for block)
+app/views/days/show.html.erb:23: syntax error, unexpected end, expecting end-of-input
+app/views/days/show.html.erb:13: syntax error, unexpected do (for block)
+app/views/days/show.html.erb:23: syntax error, unexpected end, expecting end-of-input
+app/views/days/show.html.erb:13: syntax error, unexpected do (for block)
+app/views/days/show.html.erb:23: syntax error, unexpected end, expecting end-of-input
+app/views/days/show.html.erb:13: syntax error, unexpected do (for block)
+app/views/days/show.html.erb:23: syntax error, unexpected end, expecting end-of-input
+Started GET "/days/2" for ::1 at 2021-01-11 01:08:29 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1256)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 18.3ms | ActiveRecord: 0.4ms | Allocations: 8920)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:08:31 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"jwjKuRohL1s9HIhCDfxEoxA1jOyRW/Fnlyn4VK6jaSI2Xey8dEwxj+eQI3uBpFZbv+y40G+XUh1oh38BUEv2Og==", "comment"=>{"comment"=>"aa", "day_id"=>"2"}, "commit"=>"登録する"}
+Started GET "/days/2" for ::1 at 2021-01-11 01:09:57 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.5ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 18.1ms | Allocations: 1791)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 135ms (Views: 67.4ms | ActiveRecord: 3.3ms | Allocations: 30633)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:10:00 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"ZpmQGe+6/4Ybv9RGbThx2yMOX25CLhHBJ3qrD++7OVHfzLYcgdfhUsEzf3/hYGMjjNdrUrzisrvY1CxaEVOmSQ==", "comment"=>{"comment"=>"aa", "day_id"=>"2"}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1047)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:6:in `create'
+Started POST "/comments" for ::1 at 2021-01-11 01:10:03 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"ZpmQGe+6/4Ybv9RGbThx2yMOX25CLhHBJ3qrD++7OVHfzLYcgdfhUsEzf3/hYGMjjNdrUrzisrvY1CxaEVOmSQ==", "comment"=>{"comment"=>"aa", "day_id"=>"2"}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1045)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:6:in `create'
+Started GET "/days/2" for ::1 at 2021-01-11 01:10:53 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1845)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 38.4ms | ActiveRecord: 2.3ms | Allocations: 31881)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:10:53 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 942)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 35.9ms | ActiveRecord: 0.4ms | Allocations: 7447)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:10:54 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 938)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 0.4ms | Allocations: 7474)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:10:58 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"p8IejM7xUYxfm47nEGKVMRyt7a7Mb7G/4L6Z67XYOFMelziJoJxPWIUXJd6cOofJs3TZkjKjEsUfEB6+SzCnSw==", "comment"=>{"comment"=>"dddd", "day_id"=>"2"}, "commit"=>"登録する"}
+No template found for CommentsController#create, rendering head :no_content
+Completed 204 No Content in 14ms (ActiveRecord: 0.0ms | Allocations: 3536)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:11:34 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1802)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 112ms (Views: 37.8ms | ActiveRecord: 2.2ms | Allocations: 31898)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:11:36 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"AYfVHPF95o7AiPa6mnv8A8LV6y4qxqvQCAkDpxKPGrC40vMZnxD4WhoEXYMWI+77bQzfEtQKCKr3p4Ty7GeFqA==", "comment"=>{"comment"=>"ddd", "day_id"=>"2"}, "commit"=>"登録する"}
+No template found for CommentsController#create, rendering head :no_content
+Completed 204 No Content in 10ms (ActiveRecord: 0.0ms | Allocations: 3534)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:13:09 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1810)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 108ms (Views: 36.2ms | ActiveRecord: 1.8ms | Allocations: 31768)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:13:11 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"vjgH6Gm1zfayrpU6vhOl78tjfwalxUhx9ic06zwQDaMHbSHtB9jTImgiPgMyS7cXZLpLOlsJ6wsJibO+wviSuw==", "comment"=>{"comment"=>"dd", "day_id"=>"2"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+No template found for CommentsController#create, rendering head :no_content
+Completed 204 No Content in 19ms (ActiveRecord: 0.9ms | Allocations: 6471)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:13:31 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1020)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 15.0ms | ActiveRecord: 2.6ms | Allocations: 19964)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:13:34 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"cyRn6hC83+Lb/SHkxKT4sl03dpDr6gXhGu/r9teoCtDKcUHvftHBNgFxit1I/OpK8u5CrBUmppvlQWyjKUCVyA==", "comment"=>{"comment"=>"aaa", "day_id"=>"2"}, "commit"=>"登録する"}
+[31mUnpermitted parameter: :day_id[0m
+No template found for CommentsController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1604)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:13:43 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1020)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 15.6ms | ActiveRecord: 1.8ms | Allocations: 19853)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:13:46 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"8qXqvr6Nq94QOu5I0h2aizUxaVcix3a6F4K4HlSCVW5L8My70OC1Csq2RXFeRYhzmuhda9wL1cDoLD9LqmrKdg==", "comment"=>{"comment"=>"a", "day_id"=>"2"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+No template found for CommentsController#create, rendering head :no_content
+Completed 204 No Content in 8ms (ActiveRecord: 0.2ms | Allocations: 4031)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:14:07 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 17.2ms | Allocations: 1021)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 27.7ms | ActiveRecord: 2.0ms | Allocations: 19880)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:14:10 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"sUyn0/RgiAyFm8IK6RDLns196TOtzZpAwAhcuwJRjWMIGYHWmg2W2F8XaTNlSNlmYqTdD1MBOTo/ptvu/LkSew==", "comment"=>{"comment"=>"a", "day_id"=>"2"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+No template found for CommentsController#create, rendering head :no_content
+Completed 204 No Content in 9ms (ActiveRecord: 0.4ms | Allocations: 4007)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:14:55 +0900
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1997)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 123ms (Views: 50.8ms | ActiveRecord: 1.3ms | Allocations: 31726)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:14:57 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"v30W0uYhDahMH1eWXTDyLqHUi0BzVM4TBPdlqHtnWR8GKDDXiEwTfJaT/K/RaODWDg2/fI2YbWn7WeL9hY/GBw==", "comment"=>{"comment"=>"aa", "day_id"=>"2"}, "commit"=>"登録する"}
+Started GET "/days/2" for ::1 at 2021-01-11 01:16:32 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 11.5ms | Allocations: 3338)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 1.5ms | Allocations: 23189)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    13:   <%= form_with model: @comment do |form| %>
+    14:     <%= form.text_area :comment, id: "comment" %>
+    15:     <%= form.hidden_field :day_id, :value => @day.id %>
+    16:     <%= form.hidden_field :user_id, :value => current_user.id %>
+    17:     <%= @day.id %>
+    18:     <%= form.submit "登録する" %>
+    19:   <% end %>
+  
+app/views/days/show.html.erb:16
+app/views/days/show.html.erb:13
+Started GET "/days/2" for ::1 at 2021-01-11 01:17:55 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 506.2ms | Allocations: 174748)
+Completed 500 Internal Server Error in 523ms (ActiveRecord: 0.4ms | Allocations: 177856)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `cuttent_user' for #<#<Class:0x00007fbdef8db0d0>:0x00007fbdef8d82b8>
+Did you mean?  current_user):
+    14:     <%= form.text_area :comment, id: "comment" %>
+    15:     <%= form.hidden_field :day_id, :value => @day.id %>
+    16:     <%#= form.hidden_field :user_id, :value => current_user.id %>
+    17:     <%= cuttent_user %>
+    18:     <%= @day.id %>
+    19:     <%= form.submit "登録する" %>
+    20:   <% end %>
+  
+app/views/days/show.html.erb:17
+app/views/days/show.html.erb:13
+Started GET "/days/2" for ::1 at 2021-01-11 01:18:04 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.4ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  Rendered days/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1398)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 34.9ms | ActiveRecord: 0.5ms | Allocations: 12604)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-01-11 01:18:52 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 214)
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 552)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 23.9ms | Allocations: 3823)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 43.0ms | ActiveRecord: 1.6ms | Allocations: 16628)
+
+
+Started POST "/users" for ::1 at 2021-01-11 01:19:06 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"TuMD2qWy7876+zi9qBZT1JyciN//iAawiaDS2/go23/3tiXfy9/xGiB3k4QkTkEsM0W84wFEpcp2DlWOBsBEZw==", "user"=>{"email"=>"a@a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a@a"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "a@a"], ["encrypted_password", "$2a$12$ujhFniMXJ.lR5YiyBbyS0uEPmMAZJ2Ss/vqMDIybYb0jpz4tg04ce"], ["created_at", "2021-01-10 16:19:06.581932"], ["updated_at", "2021-01-10 16:19:06.581932"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 310ms (ActiveRecord: 5.7ms | Allocations: 10352)
+
+
+Started GET "/" for ::1 at 2021-01-11 01:19:06 +0900
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.5ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1943)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 12.3ms | ActiveRecord: 0.8ms | Allocations: 9106)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:19:12 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:17
+  Rendered days/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 2261)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 20.1ms | ActiveRecord: 0.7ms | Allocations: 9470)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:19:29 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:17
+  Rendered days/show.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2178)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 19.4ms | ActiveRecord: 0.5ms | Allocations: 9751)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:19:47 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2216)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 0.3ms | Allocations: 9790)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:19:51 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"qhfFUo9ner2n2ho6FDBWSy44YBiGXcj5o4hDpwSfTmMTQuNX4QpkaX1WsQOYaESzgeFUJHiRa4NcJsTy+nfRew==", "comment"=>{"comment"=>"a", "day_id"=>"2", "user_id"=>"1"}, "commit"=>"登録する"}
+[31mUnpermitted parameter: :user_id[0m
+Started GET "/days/2" for ::1 at 2021-01-11 01:20:14 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+Started GET "/days/2" for ::1 at 2021-01-11 01:20:14 +0900
+  Rendering days/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+Processing by DaysController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Parameters: {"id"=>"2"}
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 27.6ms | Allocations: 11192)
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2383)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 47.5ms | ActiveRecord: 1.2ms | Allocations: 27701)
+
+
+Completed 200 OK in 141ms (Views: 82.8ms | ActiveRecord: 3.2ms | Allocations: 53972)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:20:15 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1870)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 23.7ms | ActiveRecord: 0.7ms | Allocations: 8417)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:20:15 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1867)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 20.1ms | ActiveRecord: 0.9ms | Allocations: 8412)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:20:15 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1870)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 15.9ms | ActiveRecord: 0.7ms | Allocations: 8414)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:20:18 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"I1LVV1JcRgj0kTe+Zz2/srbeNR1gZJgiacPomVgl8AWaB/NSPDFY3C4dnIfrZa1KGQcBIZ6oO1iWbW/Mps1vHQ==", "comment"=>{"comment"=>"dd", "day_id"=>"2", "user_id"=>"1"}, "commit"=>"登録する"}
+[31mUnpermitted parameter: :user_id[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+No template found for CommentsController#create, rendering head :no_content
+Completed 204 No Content in 15ms (ActiveRecord: 0.3ms | Allocations: 6521)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:21:17 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 25.2ms | Allocations: 9293)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 137ms (Views: 50.3ms | ActiveRecord: 5.4ms | Allocations: 39174)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:21:19 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"EtrF6nUZHKKzHt3rorrCfU0TefwE25C1ZN+SsXi5c3yrj+PvG3QCdmmSdtIu4tCF4spNwPoXM8+bcRXkhlHsZA==", "comment"=>{"comment"=>"aa", "day_id"=>"2", "user_id"=>"1"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "comment", "user_id", "day_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2021-01-10 16:21:19.698740"], ["updated_at", "2021-01-10 16:21:19.698740"], ["comment", "aa"], ["user_id", "1"], ["day_id", "2"]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Started GET "/days/2" for ::1 at 2021-01-11 01:21:38 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.6ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 17.8ms | Allocations: 9308)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 141ms (Views: 54.7ms | ActiveRecord: 3.8ms | Allocations: 39201)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:21:41 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"PEXgWiLuxtICORrOrUvVU2jfDDdfniR9QlpyDFLz9UCFEMZfTIPYBti1sfchE8erxwY4C6FShwe99PVZrBtqWA==", "comment"=>{"comment"=>"aaaaaa", "day_id"=>"2", "user_id"=>"1"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (1.3ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "comment", "user_id", "day_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2021-01-10 16:21:41.435969"], ["updated_at", "2021-01-10 16:21:41.435969"], ["comment", "aaaaaa"], ["user_id", "1"], ["day_id", "2"]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 437ms (ActiveRecord: 2.7ms | Allocations: 124102)
+
+
+  
+NameError (undefined local variable or method `places_index_path' for #<CommentsController:0x00007f952a4a8190>
+Did you mean?  workplaces_index_path):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started GET "/days/2" for ::1 at 2021-01-11 01:23:11 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (1.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 30.3ms | Allocations: 9290)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 150ms (Views: 62.9ms | ActiveRecord: 6.1ms | Allocations: 39209)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:23:12 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.7ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1877)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 20.4ms | ActiveRecord: 1.2ms | Allocations: 8421)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:23:18 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"G6kpHRN/YiJTpL3mYB9XMACY6lPJhV/HmtmpVQEIHEmi/A8YfRJ89okoFt/sR0XIr0HebzdJ/L1ldy4A/+CDUQ==", "comment"=>{"comment"=>"qqqqqq", "day_id"=>"2", "user_id"=>"1"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "comment", "user_id", "day_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2021-01-10 16:23:18.119462"], ["updated_at", "2021-01-10 16:23:18.119462"], ["comment", "qqqqqq"], ["user_id", "1"], ["day_id", "2"]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 349ms (ActiveRecord: 2.5ms | Allocations: 124109)
+
+
+  
+NameError (undefined local variable or method `places_index_path' for #<CommentsController:0x00007fee4b8c29b8>
+Did you mean?  workplaces_index_path):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started GET "/days/2" for ::1 at 2021-01-11 01:23:20 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1881)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 22.2ms | ActiveRecord: 0.7ms | Allocations: 8526)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:23:21 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1867)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 16.3ms | ActiveRecord: 0.6ms | Allocations: 8395)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:26:08 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  Rendered days/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2167)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 1.5ms | Allocations: 23765)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3: <%= attachment_image_tag @day, :image, format: 'jpeg', size: "100x100" %>
+    4: 
+    5: <div id="commentsContainer">
+    6:   <% @comments.each do |comment| %>
+    7:       <div class="commentsItem">
+    8:         <%= comment.comment %>
+    9:       </div>
+  
+app/views/days/show.html.erb:6
+Started GET "/days/2" for ::1 at 2021-01-11 01:26:08 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  Rendered days/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1241)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 3918)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3: <%= attachment_image_tag @day, :image, format: 'jpeg', size: "100x100" %>
+    4: 
+    5: <div id="commentsContainer">
+    6:   <% @comments.each do |comment| %>
+    7:       <div class="commentsItem">
+    8:         <%= comment.comment %>
+    9:       </div>
+  
+app/views/days/show.html.erb:6
+Started GET "/days/2" for ::1 at 2021-01-11 01:26:45 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/show.html.erb:6
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:16
+  Rendered days/show.html.erb within layouts/application (Duration: 25.0ms | Allocations: 8643)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 51.3ms | ActiveRecord: 2.9ms | Allocations: 31423)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:28:49 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 3.5ms | Allocations: 781)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 9.8ms | Allocations: 2541)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 0.6ms | Allocations: 10134)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:28:55 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.7ms | Allocations: 631)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1959)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 24.3ms | ActiveRecord: 0.5ms | Allocations: 8501)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:28:56 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 2.0ms | Allocations: 631)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1953)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 13.0ms | ActiveRecord: 0.8ms | Allocations: 8498)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:28:56 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.7ms | Allocations: 630)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1950)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 14.1ms | ActiveRecord: 0.5ms | Allocations: 8477)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:28:57 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.8ms | Allocations: 631)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1953)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 0.5ms | Allocations: 8499)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:28:57 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.6ms | Allocations: 630)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1950)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 0.5ms | Allocations: 8474)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:28:57 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.6ms | Allocations: 630)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1950)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.5ms | Allocations: 8486)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:30:38 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 2.0ms | Allocations: 781)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2544)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 21.0ms | ActiveRecord: 0.4ms | Allocations: 10134)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:30:39 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.4ms | Allocations: 630)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1958)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 13.2ms | ActiveRecord: 0.4ms | Allocations: 8483)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:30:39 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 2.5ms | Allocations: 630)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1951)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 0.7ms | Allocations: 8480)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:30:40 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.7ms | Allocations: 630)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1951)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 19.1ms | ActiveRecord: 0.6ms | Allocations: 8480)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:30:40 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.5ms | Allocations: 630)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1951)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 15.5ms | ActiveRecord: 0.8ms | Allocations: 8477)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:30:40 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.5ms | Allocations: 630)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1951)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 12.2ms | ActiveRecord: 0.5ms | Allocations: 8476)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:31:35 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:18:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.0ms | Allocations: 646)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 13.3ms | Allocations: 8140)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 18.3ms | ActiveRecord: 2.8ms | Allocations: 27705)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:31:46 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.4ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 2.0ms | Allocations: 648)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 17.0ms | Allocations: 8142)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 25.6ms | ActiveRecord: 2.3ms | Allocations: 27070)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:31:47 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.5ms | Allocations: 630)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1951)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 0.4ms | Allocations: 8501)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:32:14 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 2.5ms | Allocations: 781)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2546)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 20.7ms | ActiveRecord: 0.6ms | Allocations: 10134)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:32:14 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.5ms | Allocations: 630)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1958)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 31.8ms | ActiveRecord: 0.5ms | Allocations: 8503)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:32:27 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" IS NULL LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/days/show.html.erb:5
+  Rendered days/_comment.html.erb (Duration: 630.3ms | Allocations: 191807)
+  Rendered days/show.html.erb within layouts/application (Duration: 632.7ms | Allocations: 192340)
+Completed 500 Internal Server Error in 643ms (ActiveRecord: 1.6ms | Allocations: 195384)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `commentall' for #<#<Class:0x00007fbbfaac9988>:0x00007fbbfe13bae8>
+Did you mean?  @commentall
+               comment_url
+               @comment
+               @comments):
+    1: <div id="commentsContainer">
+    2:   <% commentall.each do |comment| %>
+    3:       <div class="commentsItem">
+    4:         <%= comment.comment %>
+    5:       </div>
+  
+app/views/days/_comment.html.erb:2
+app/views/days/show.html.erb:5
+Started GET "/days/2" for ::1 at 2021-01-11 01:32:37 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 2.7ms | Allocations: 837)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2595)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 20.8ms | ActiveRecord: 0.8ms | Allocations: 10187)
+
+
+Started GET "/days/1" for ::1 at 2021-01-11 01:32:45 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.1ms | Allocations: 668)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2203)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 0.4ms | Allocations: 8748)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 01:32:45 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 01:32:45 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 13.4ms
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:32:52 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.6ms | Allocations: 668)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1989)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 0.5ms | Allocations: 8531)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:34:01 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.9ms | Allocations: 915)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 18.4ms | Allocations: 9622)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 109ms (Views: 46.7ms | ActiveRecord: 2.2ms | Allocations: 39665)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:34:04 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"8nqZcaybdfVVrB6QiNtzA7fvnrpmar0UNz/pY4zyKrtLL790wvZrIY8gtakEg2H7GDaqhpimHm7IkW42chq1ow==", "comment"=>{"comment"=>"e", "day_id"=>"2", "user_id"=>"1"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "comment", "user_id", "day_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2021-01-10 16:34:04.426672"], ["updated_at", "2021-01-10 16:34:04.426672"], ["comment", "e"], ["user_id", "1"], ["day_id", "2"]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.8ms | Allocations: 6266)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"days"}, missing required keys: [:id]):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/comments" for ::1 at 2021-01-11 01:34:07 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"8nqZcaybdfVVrB6QiNtzA7fvnrpmar0UNz/pY4zyKrtLL790wvZrIY8gtakEg2H7GDaqhpimHm7IkW42chq1ow==", "comment"=>{"comment"=>"e", "day_id"=>"2", "user_id"=>"1"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "comment", "user_id", "day_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2021-01-10 16:34:07.412084"], ["updated_at", "2021-01-10 16:34:07.412084"], ["comment", "e"], ["user_id", "1"], ["day_id", "2"]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.0ms | Allocations: 5442)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"days"}, missing required keys: [:id]):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started GET "/days/2" for ::1 at 2021-01-11 01:34:08 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 4.0ms | Allocations: 700)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2038)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 0.6ms | Allocations: 8629)
+
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:35:59 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 2.9ms | Allocations: 949)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 26.6ms | Allocations: 9685)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 134ms (Views: 53.5ms | ActiveRecord: 4.6ms | Allocations: 39757)
+
+
+Started POST "/comments" for ::1 at 2021-01-11 01:36:02 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"XF67BnkuCcELS1dsaED7zFHxwW09YWYeBkHleEp1oM3lC50DF0MXFdHH/FXkGOk0/ij1UcOtxWT572IttJ0/1Q==", "comment"=>{"comment"=>"a", "day_id"=>"2", "user_id"=>"1"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "comment", "user_id", "day_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2021-01-10 16:36:02.735659"], ["updated_at", "2021-01-10 16:36:02.735659"], ["comment", "a"], ["user_id", "1"], ["day_id", "2"]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.9ms | Allocations: 6270)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"days"}, missing required keys: [:id]):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started GET "/days/2" for ::1 at 2021-01-11 01:36:04 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.6ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.8ms | Allocations: 716)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2056)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 13.1ms | ActiveRecord: 0.9ms | Allocations: 8723)
+
+
+Started GET "/days/1" for ::1 at 2021-01-11 01:36:11 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 2.3ms | Allocations: 715)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2246)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 23.2ms | ActiveRecord: 1.2ms | Allocations: 8809)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 01:36:12 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 01:36:12 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 4.5ms
+
+Started GET "/days/1" for ::1 at 2021-01-11 01:36:27 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 2.2ms | Allocations: 1035)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 18.8ms | Allocations: 9542)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 26.8ms | ActiveRecord: 3.8ms | Allocations: 32268)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 01:36:28 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 01:36:28 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 1.2ms
+
+Started POST "/comments" for ::1 at 2021-01-11 01:36:29 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"HpZ7m4k4VO/vE/rvlA3dDr4VY3IcOG0KSCzsh0cUPl+nw12e51VKOzWfUdYYVc/2EcxXTuL0znC3gmvSufyhRw==", "comment"=>{"comment"=>"a", "day_id"=>"1", "user_id"=>"1"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "comment", "user_id", "day_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2021-01-10 16:36:29.897553"], ["updated_at", "2021-01-10 16:36:29.897553"], ["comment", "a"], ["user_id", "1"], ["day_id", "1"]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.9ms | Allocations: 5766)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"days"}, missing required keys: [:id]):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started GET "/days/1" for ::1 at 2021-01-11 01:40:24 +0900
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 1.9ms | Allocations: 945)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 19.3ms | Allocations: 9936)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 74.5ms | ActiveRecord: 2.3ms | Allocations: 35105)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 01:40:24 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 01:40:25 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 8.6ms
+
+Started POST "/comments" for ::1 at 2021-01-11 01:40:26 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"5wtaSnjEvPiLMo3DhQsuNxbEzoAdxxn63qY4D3C4LrVeXnxPFqmiLFG+JvoJUzzPuR36vOMLuoAhCL9ajlCxrQ==", "comment"=>{"comment"=>"a", "day_id"=>"1", "user_id"=>"1"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "comment", "user_id", "day_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2021-01-10 16:40:26.952227"], ["updated_at", "2021-01-10 16:40:26.952227"], ["comment", "a"], ["user_id", "1"], ["day_id", "1"]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.7ms | Allocations: 8036)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"days"}, missing required keys: [:id]):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started GET "/days/1" for ::1 at 2021-01-11 01:40:28 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 3.0ms | Allocations: 744)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 21.1ms | Allocations: 2250)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 28.1ms | ActiveRecord: 0.8ms | Allocations: 7855)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 01:40:28 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 01:40:28 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 1.7ms
+
+Started GET "/days/1" for ::1 at 2021-01-11 01:42:09 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 2.3ms | Allocations: 902)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 26.1ms | Allocations: 9877)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 50.0ms | ActiveRecord: 3.2ms | Allocations: 35148)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 01:42:09 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 01:42:09 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 11.3ms
+
+Started GET "/days/2" for ::1 at 2021-01-11 01:42:14 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "2"]]
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 3.0ms | Allocations: 735)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2065)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.7ms | Allocations: 7633)
+
+
+Started GET "/days/1" for ::1 at 2021-01-11 01:42:23 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/_comment.html.erb:2
+  Rendered days/_comment.html.erb (Duration: 3.3ms | Allocations: 674)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/days/show.html.erb:10
+  Rendered days/show.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 24.4ms | ActiveRecord: 0.9ms | Allocations: 7727)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-11 01:42:23 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-11 01:42:23 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 2.6ms
+
