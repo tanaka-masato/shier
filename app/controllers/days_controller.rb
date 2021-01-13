@@ -9,7 +9,7 @@ class DaysController < ApplicationController
 
   def show
     @day = Day.find(params[:id])
-    @comment = Comment.new
+    @comment = current_user.comments.build
     #@comments = @day.comments
     @comments = Comment.where(day_id: @coomment)
     @commentall = Comment.where(day_id: @day)

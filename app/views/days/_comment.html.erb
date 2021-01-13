@@ -1,7 +1,7 @@
 <div id="commentsContainer">
   <% @commentall.each do |comment| %>
       <div class="commentsItem">
-        <%= comment.comment %>
+        <%= simple_format(h comment.comment) %>
       </div>
     <% end %>
 </div>

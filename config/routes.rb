@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   resources :places
   get 'workplaces/index'
   get 'workplaces/new'
-  resources :comments 
+  resources :comments, only: :create
   post 'days/:id' => 'days#show'
+  mount ActionCable.server => '/cable'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

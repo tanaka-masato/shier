@@ -3,10 +3,8 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @comment = Comment.new(comment_params)
-    if @comment.save
-        render day_path
-    end
+    @comment = current_user.comments.create!(comment_params)
+    ActionCable.server.broadcast 'day_channel', comment: @comment.comment
   end
 
   private
