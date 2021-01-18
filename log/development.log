@@ -1,0 +1,690 @@
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWorkPlaces (20201031142149)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "work_places" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "title" integer, "day_id" varchar)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201031142149"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDays (20201031142213)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "days" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "day_img_id" varchar, "comments_id" varchar, "day" date)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201031142213"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20201031142232)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "comment" text, "user_id" varchar)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201031142232"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-31 14:30:09.978589"], ["updated_at", "2020-10-31 14:30:09.978589"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-10-31 23:44:24 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 17.1ms | Allocations: 478)
+Completed 200 OK in 42ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 2766)
+
+
+Started GET "/workplace" for ::1 at 2020-10-31 23:44:37 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/workplace"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/workplaces/index" for ::1 at 2020-10-31 23:45:20 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/masato/EnGii/shier/開発/shier/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.2
+Time: 2051ms
+Built at: 2020/10/31 23:45:24
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3757ms (Views: 3756.3ms | ActiveRecord: 0.0ms | Allocations: 29996)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20201031170349)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201031170349"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/workplaces/index" for ::1 at 2020-11-01 02:08:08 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 204)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 9961)
+
+
+Started GET "/sign_up" for ::1 at 2020-11-01 02:08:25 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/user/sign_up" for ::1 at 2020-11-01 02:08:41 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user/sign_up"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_up" for ::1 at 2020-11-01 02:08:58 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.6.0/gems/devise-4.7.3/app/views/devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 212)
+  Rendered /Library/Ruby/Gems/2.6.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 543)
+  Rendered /Library/Ruby/Gems/2.6.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 24.1ms | Allocations: 8845)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 44.9ms | ActiveRecord: 0.6ms | Allocations: 21435)
+
+
+Started POST "/users" for ::1 at 2020-11-01 02:12:30 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"6HtfN4glaXtmD/ZKJszkAZIv+Y4uPqLnbPgT/5Mgaxeu4Mkctn5G6H/kf5tk3pSlt0dT+Ocf41u/eWO6RNtvHA==", "user"=>{"email"=>"aa@a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aa@a"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "aa@a"], ["encrypted_password", "$2a$12$KKX6TPqRMr8vJEUJYRInI.khSkIrZGQhkFjgHXl3BW0IbzndYAxHm"], ["created_at", "2020-10-31 17:12:30.866924"], ["updated_at", "2020-10-31 17:12:30.866924"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 773ms (ActiveRecord: 3.7ms | Allocations: 19675)
+
+
+Started GET "/" for ::1 at 2020-11-01 02:12:30 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 11777)
+
+
+Started GET "/" for ::1 at 2020-11-08 06:22:31 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 45.0ms | ActiveRecord: 0.0ms | Allocations: 12069)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-11-08 06:23:32 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 33ms (ActiveRecord: 2.0ms | Allocations: 10807)
+
+
+Started GET "/" for ::1 at 2020-11-08 06:23:32 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 204)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 44.2ms | ActiveRecord: 0.0ms | Allocations: 9975)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-11-08 06:23:41 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms | Allocations: 1904)
+
+
+Started GET "/" for ::1 at 2020-11-08 06:23:41 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 4807)
+
+
+Started GET "/" for ::1 at 2021-01-03 14:33:52 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 231)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 30.0ms | ActiveRecord: 0.0ms | Allocations: 12018)
+
+
+Started GET "/" for ::1 at 2021-01-03 14:34:32 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.0ms | Allocations: 16488)
+
+
+Started GET "/days" for ::1 at 2021-01-03 14:34:50 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/days"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/days/index" for ::1 at 2021-01-03 14:34:58 +0900
+Processing by DaysController#index as HTML
+  Rendering days/index.html.erb within layouts/application
+  Rendered days/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5523)
+
+
+Started GET "/days/index" for ::1 at 2021-01-03 14:36:06 +0900
+Processing by DaysController#index as HTML
+  Rendering days/index.html.erb within layouts/application
+  Rendered days/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 5893)
+
+
+Started GET "/" for ::1 at 2021-01-03 14:36:10 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 5619)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 10850)
+
+
+Started GET "/" for ::1 at 2021-01-03 14:36:11 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1745)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 6319)
+
+
+Started GET "/" for ::1 at 2021-01-03 14:36:19 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 45.0ms | Allocations: 11136)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 64.1ms | ActiveRecord: 0.0ms | Allocations: 17849)
+
+
+Started GET "/" for ::1 at 2021-01-03 14:36:20 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 22.2ms | Allocations: 1746)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms | Allocations: 6326)
+
+
+Started GET "/" for ::1 at 2021-01-03 14:36:21 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1745)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 6321)
+
+
+Started GET "/" for ::1 at 2021-01-03 14:47:22 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 67.5ms | Allocations: 18915)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 143ms (Views: 134.2ms | ActiveRecord: 0.0ms | Allocations: 30660)
+
+
+Started GET "/days/index" for ::1 at 2021-01-03 14:47:27 +0900
+Processing by DaysController#index as HTML
+  Rendering days/index.html.erb within layouts/application
+  Rendered days/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5495)
+
+
+Started GET "/days/index" for ::1 at 2021-01-03 14:47:28 +0900
+Processing by DaysController#index as HTML
+  Rendering days/index.html.erb within layouts/application
+  Rendered days/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 4739)
+
+
+Started GET "/" for ::1 at 2021-01-03 14:47:33 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1747)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 6264)
+
+
+Started GET "/" for ::1 at 2021-01-03 23:03:00 +0900
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 20.7ms | Allocations: 7091)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 41.1ms | ActiveRecord: 0.0ms | Allocations: 13798)
+
+
+Started GET "/" for ::1 at 2021-01-03 23:03:01 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1745)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 6261)
+
+
+Started GET "/" for ::1 at 2021-01-03 23:04:06 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 32.6ms | Allocations: 14698)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 35.4ms | Allocations: 15311)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms | Allocations: 17429)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     7:   <%= yield :css %> 
+     8: 
+     9:   <%= javascript_include_tag 'application' %>
+    10: 
+    11: </head>
+  
+app/views/layouts/_meta.erb:9
+app/views/workplaces/index.html.erb:1
+Started GET "/" for ::1 at 2021-01-03 23:04:08 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 8.4ms | Allocations: 9025)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 9098)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 9557)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     7:   <%= yield :css %> 
+     8: 
+     9:   <%= javascript_include_tag 'application' %>
+    10: 
+    11: </head>
+  
+app/views/layouts/_meta.erb:9
+app/views/workplaces/index.html.erb:1
+Started GET "/" for ::1 at 2021-01-03 23:05:38 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 54.2ms | Allocations: 16590)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 56.1ms | Allocations: 17126)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms | Allocations: 19244)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     7:   <%= yield :css %> 
+     8: 
+     9:   <%= javascript_include_tag 'application' %>
+    10: 
+    11: </head>
+  
+app/views/layouts/_meta.erb:9
+app/views/workplaces/index.html.erb:1
+Started GET "/" for ::1 at 2021-01-03 23:05:39 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 7.7ms | Allocations: 9025)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 9098)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 9557)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     7:   <%= yield :css %> 
+     8: 
+     9:   <%= javascript_include_tag 'application' %>
+    10: 
+    11: </head>
+  
+app/views/layouts/_meta.erb:9
+app/views/workplaces/index.html.erb:1
+Started GET "/" for ::1 at 2021-01-03 23:06:18 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 7.2ms | Allocations: 9003)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 9075)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 9529)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     7:   <%= yield :css %> 
+     8: 
+     9:   <%= javascript_include_tag 'application' %>
+    10: 
+    11: </head>
+  
+app/views/layouts/_meta.erb:9
+app/views/workplaces/index.html.erb:1
+Started GET "/" for ::1 at 2021-01-03 23:06:20 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 8.0ms | Allocations: 9001)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 9072)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 9522)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     7:   <%= yield :css %> 
+     8: 
+     9:   <%= javascript_include_tag 'application' %>
+    10: 
+    11: </head>
+  
+app/views/layouts/_meta.erb:9
+app/views/workplaces/index.html.erb:1
+Started GET "/" for ::1 at 2021-01-03 23:07:03 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 3.0ms | Allocations: 2327)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 4334)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 9322)
+
+
+Started GET "/" for ::1 at 2021-01-03 23:07:39 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 29.2ms | Allocations: 12536)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 42.2ms | Allocations: 17592)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.0ms | Allocations: 21511)
+
+
+Started GET "/days/index" for ::1 at 2021-01-03 23:07:45 +0900
+Processing by DaysController#index as HTML
+  Rendering days/index.html.erb within layouts/application
+  Rendered days/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 5432)
+
+
+Started GET "/days/index" for ::1 at 2021-01-03 23:09:24 +0900
+Processing by DaysController#index as HTML
+  Rendering days/index.html.erb within layouts/application
+  Rendered days/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 7675)
+
+
+Started GET "/" for ::1 at 2021-01-03 23:09:36 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 6.6ms | Allocations: 5410)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 5481)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 5928)
+
+
+Started GET "/" for ::1 at 2021-01-03 23:09:56 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 16.0ms | Allocations: 8378)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 8903)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 11097)
+
+
+Started GET "/" for ::1 at 2021-01-03 23:09:58 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 17.7ms | Allocations: 5395)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 5467)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 5916)
+
+
+Started GET "/" for ::1 at 2021-01-03 23:11:56 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 16.5ms | Allocations: 5395)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 5467)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 5915)
+
+
+Started GET "/" for ::1 at 2021-01-03 23:11:56 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 15.8ms | Allocations: 5393)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 17.7ms | Allocations: 5464)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 5910)
+
+
+Started GET "/" for ::1 at 2021-01-03 23:12:05 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 36.5ms | Allocations: 8514)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 39.0ms | Allocations: 9042)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms | Allocations: 11150)
+
+
+Started GET "/" for ::1 at 2021-01-03 23:12:06 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 31.2ms | Allocations: 5395)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 31.4ms | Allocations: 5467)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms | Allocations: 5918)
+
+
+Started GET "/" for ::1 at 2021-01-03 23:12:16 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 30.2ms | Allocations: 10775)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 32.6ms | Allocations: 12498)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms | Allocations: 16636)
+
+
+Started GET "/days/index" for ::1 at 2021-01-03 23:12:22 +0900
+Processing by DaysController#index as HTML
+  Rendering days/index.html.erb within layouts/application
+  Rendered days/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 5482)
+
+
+Started GET "/days/index" for ::1 at 2021-01-04 12:16:18 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#index as HTML
+  Rendering days/index.html.erb within layouts/application
+  Rendered days/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 354)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 132ms (Views: 123.0ms | ActiveRecord: 0.0ms | Allocations: 29385)
+
+
+Started GET "/" for ::1 at 2021-01-04 12:16:24 +0900
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered layouts/_meta.erb (Duration: 3.3ms | Allocations: 2332)
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 8052)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 12534)
+
+
+Started GET "/" for ::1 at 2021-01-04 12:19:49 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkplacesController#index as HTML
+  Rendering workplaces/index.html.erb within layouts/application
+  Rendered workplaces/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 306)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 12823)
+
+
+Started GET "/days/index" for ::1 at 2021-01-04 12:19:57 +0900
+Processing by DaysController#index as HTML
+  Rendering days/index.html.erb within layouts/application
+  Rendered days/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 5487)
+
+
