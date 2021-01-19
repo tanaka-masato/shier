@@ -1,29 +1,57 @@
-<h2>Sign up</h2>
+<head>
+  <meta name="viewport" content="width=device-width, user-scale=yes,
+    initial-scale=1.0, maximum-scale=5.0" />
+</head>
+<div class="registerContainer">
+  <div class="registerNewTop">
+    <h2 class="registerNewTitle">SHIER</h2>
+    <p class="registerNewSubtitle">シフト共有アプリケーション</p>
+  </div>
+  <div class="registerForGoogle">
+    <div class="ragisterForGoogleImg">
+      <%= image_tag 'googleIcon.png' ,width: "25vw" %>
+    </div>
+    <p> Googleでログイン</p>
+  </div>
+  <div class="another">
+    <p>または</p>
+  </div>
+  <div class="registerAction">
+    <div class="registerForMailTitle">
+      <div class="ragisterForMailImg">
+        <%= image_tag 'mailIcon.png' %>
+      </div>
+      <p>メールアドレスで登録</p>
+    </div>
+  　<div class="registerForMail">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
+        <div class="registerForMailField">
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => "メールアドレス" %>
+        </div>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+        <div class="registerForMailField">
+          <%= f.text_field :name, autofocus: true, autocomplete: "name", :placeholder => "名前" %>
+        </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <div class="registerForMailField">
+          <%= f.password_field :password, autocomplete: "new-password", :placeholder => "パスワード" %><br />
+          <% if @minimum_password_length %>
+            
+          <% end %>
+        </div>
+
+        <div class="registerForMailField">
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", :placeholder => "パスワード再入力" %>
+        </div>
+
+        <div class="registerForMailActions">
+          <%= f.submit "登録" %>
+        </div>
+      <% end %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+  <%# <%= render "devise/shared/links" %>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>
