@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = current_user.comments.create!(comment_params)
-    ActionCable.server.broadcast 'day_channel', comment: @comment.comment
+    ActionCable.server.broadcast 'day_channel', comment: @comment.template
   end
 
   private

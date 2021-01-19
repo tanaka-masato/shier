@@ -3,7 +3,7 @@
 <%= attachment_image_tag @day, :image, format: 'jpeg', size: "100x100" %>
 
 <div id="commentsContainer">
-  <%= render 'comment', collection: @commentall %>
+  <%= render 'comment', collection: @comments %>
 </div>
 <div id="commentsFormContainer">
   <%= form_with model: @comment, local: false do |form| %>
