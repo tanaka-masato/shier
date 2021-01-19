@@ -9,10 +9,10 @@ class DaysController < ApplicationController
 
   def show
     @day = Day.find(params[:id])
+    # 送信用
     @comment = current_user.comments.build
-    #@comments = @day.comments
-    @comments = Comment.where(day_id: @coomment)
-    @commentall = Comment.where(day_id: @day)
+    #表示用
+    @comments = Comment.where(day_id: @day)
   end
   
   def create
