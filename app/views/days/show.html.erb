@@ -1,0 +1,16 @@
+<%= @day.day %>
+<%= @day.contents %>
+<%= attachment_image_tag @day, :image, format: 'jpeg', size: "100x100" %>
+
+<div id="commentsContainer">
+  <%= render partial: 'comment', collection: @comments %>
+</div>
+<div id="commentsFormContainer">
+  <%= form_with model: @comment, local: false do |form| %>
+    <%= form.text_area :comment, class: 'form-control' %>
+    <%= form.hidden_field :day_id, :value => @day.id %>
+    <%= form.hidden_field :user_id, :value => current_user.id %>
+    <%= form.submit "登録する", id: "send" %>
+  <% end %>
+</div>
+

@@ -1,0 +1,28 @@
+<header>
+  <div class="post">
+    <%= link_to '+', '/places/new' %>
+  </div>
+</header>
+
+<% @places.each do |place| %>
+  <%= attachment_image_tag place, :image, format: 'jpeg', size: "100x100" %>
+  <%= place.name %>
+<% end %>
+
+<div class="myshop">
+  <p>マクドナルド中川</p>
+  <button>退会</button>
+</div>
+
+<p>シフト一覧</p>
+
+<div class="shift">
+  <% @days.each do |day| %>
+    <%= day.day %>
+    <%= link_to "#{day.contents}", day_path(day.id) %>
+  <% end %>
+</div>
+
+<div class="post">
+  <%= link_to '+', '/days/new' %>
+</div>
