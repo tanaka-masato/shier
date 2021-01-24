@@ -19508,3 +19508,225 @@ Started GET "/cable/" [WebSocket] for ::1 at 2021-01-20 01:51:19 +0900
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 DayChannel is transmitting the subscription confirmation
 DayChannel is streaming from day_channel
+Started GET "/cable" for ::1 at 2021-01-20 02:02:45 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for ::1 at 2021-01-20 02:02:45 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+DayChannel is transmitting the subscription confirmation
+DayChannel is streaming from day_channel
+Started GET "/days/1" for ::1 at 2021-01-20 02:02:46 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:13:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/show.html.erb:6
+  Rendered collection of days/_comment.html.erb [46 times] (Duration: 54.0ms | Allocations: 11316)
+  Rendered days/show.html.erb within layouts/application (Duration: 65.3ms | Allocations: 14278)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 235ms (Views: 136.9ms | ActiveRecord: 3.9ms | Allocations: 48590)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-20 02:02:47 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-20 02:02:47 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 13.1ms
+
+Started GET "/cable" for ::1 at 2021-01-20 02:02:47 +0900
+Started GET "/cable/" [WebSocket] for ::1 at 2021-01-20 02:02:47 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+DayChannel is transmitting the subscription confirmation
+DayChannel is streaming from day_channel
+Started GET "/days/1" for ::1 at 2021-01-20 02:03:14 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:13:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/show.html.erb:6
+  Rendered collection of days/_comment.html.erb [46 times] (Duration: 4.0ms | Allocations: 2391)
+  Rendered days/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 4716)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 3.0ms | Allocations: 29911)
+
+
+  
+ActionView::Template::Error (undefined method `name' for "1":String):
+    1: <div id="commentsCont">
+    2:   <div class="commentsItem">
+    3:     <%= simple_format(comment.user_id.name) %>
+    4:     <%= simple_format(comment.comment) %>
+    5:   </div>
+    6: </div>
+  
+app/views/days/_comment.html.erb:3
+app/views/days/show.html.erb:6
+Started GET "/cable" for ::1 at 2021-01-20 02:03:15 +0900
+Started GET "/cable/" [WebSocket] for ::1 at 2021-01-20 02:03:15 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+DayChannel is transmitting the subscription confirmation
+DayChannel is streaming from day_channel
+Started GET "/days/1" for ::1 at 2021-01-20 02:04:55 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:13:in `show'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ? LIMIT ?[0m  [["day_id", "1"], ["LIMIT", 11]]
+  ↳ app/controllers/days_controller.rb:17:in `show'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ (byebug):1:in `show'
+Started GET "/" for ::1 at 2021-01-24 22:31:42 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.5ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:7
+  [1m[36mDay Load (0.5ms)[0m  [1m[34mSELECT "days".* FROM "days"[0m
+  ↳ app/views/places/index.html.erb:20
+  Rendered places/index.html.erb within layouts/application (Duration: 17.7ms | Allocations: 8105)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 101ms (Views: 84.7ms | ActiveRecord: 1.8ms | Allocations: 23131)
+
+
+Started GET "/cable" for ::1 at 2021-01-24 22:31:42 +0900
+Started GET "/cable/" [WebSocket] for ::1 at 2021-01-24 22:31:42 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+DayChannel is transmitting the subscription confirmation
+DayChannel is streaming from day_channel
+Started GET "/days/1" for ::1 at 2021-01-24 22:31:48 +0900
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.3ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:13:in `show'
+Started GET "/days/1" for ::1 at 2021-01-24 22:32:24 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:13:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/show.html.erb:6
+  Rendered collection of days/_comment.html.erb [46 times] (Duration: 16.1ms | Allocations: 11319)
+  Rendered days/show.html.erb within layouts/application (Duration: 23.3ms | Allocations: 14313)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 116ms (Views: 47.0ms | ActiveRecord: 2.2ms | Allocations: 49835)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-24 22:32:25 +0900
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-24 22:32:25 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 5.4ms
+
+Started GET "/cable" for ::1 at 2021-01-24 22:32:25 +0900
+Started GET "/cable/" [WebSocket] for ::1 at 2021-01-24 22:32:25 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+DayChannel is transmitting the subscription confirmation
+DayChannel is streaming from day_channel
+Started POST "/comments" for ::1 at 2021-01-24 22:32:30 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"Yznsuux1ElBCKeT6UR12zvg8xUIyMfullh9z+WEQEp3abMq/ghgMhJilT8PdRWQ2V+Xxfsz9WN9psfSsn/iNhQ==", "comment"=>{"comment"=>"a", "day_id"=>"1", "user_id"=>"1"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "comment", "user_id", "day_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2021-01-24 13:32:30.785142"], ["updated_at", "2021-01-24 13:32:30.785142"], ["comment", "a"], ["user_id", "1"], ["day_id", "1"]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  Rendered days/_comment.html.erb (Duration: 2.4ms | Allocations: 376)
+[ActionCable] Broadcasting to day_channel: {:comment=>"<div id=\"commentsCont\">\n  <div class=\"commentsItem\">\n    <p>1</p>\n    <p>a</p>\n  </div>\n</div>"}
+DayChannel transmitting {"comment"=>"<div id=\"commentsCont\">\n  <div class=\"commentsItem\">\n    <p>1</p>\n    <p>a</p>\n  </div>\n</div>"} (via streamed from day_channel)
+  Rendering comments/create.js.erb
+  Rendered comments/create.js.erb (Duration: 1.1ms | Allocations: 99)
+Completed 200 OK in 35ms (Views: 8.2ms | ActiveRecord: 1.7ms | Allocations: 9395)
+
+
+Started POST "/comments" for ::1 at 2021-01-24 22:32:33 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"Yznsuux1ElBCKeT6UR12zvg8xUIyMfullh9z+WEQEp3abMq/ghgMhJilT8PdRWQ2V+Xxfsz9WN9psfSsn/iNhQ==", "comment"=>{"comment"=>"a", "day_id"=>"1", "user_id"=>"1"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "comment", "user_id", "day_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2021-01-24 13:32:33.608268"], ["updated_at", "2021-01-24 13:32:33.608268"], ["comment", "a"], ["user_id", "1"], ["day_id", "1"]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  Rendered days/_comment.html.erb (Duration: 0.5ms | Allocations: 250)
+[ActionCable] Broadcasting to day_channel: {:comment=>"<div id=\"commentsCont\">\n  <div class=\"commentsItem\">\n    <p>1</p>\n    <p>a</p>\n  </div>\n</div>"}
+  Rendering comments/create.js.erb
+DayChannel transmitting {"comment"=>"<div id=\"commentsCont\">\n  <div class=\"commentsItem\">\n    <p>1</p>\n    <p>a</p>\n  </div>\n</div>"} (via streamed from day_channel)
+  Rendered comments/create.js.erb (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 20ms (Views: 2.5ms | ActiveRecord: 1.6ms | Allocations: 6328)
+
+
+Started GET "/days/1" for ::1 at 2021-01-24 23:27:43 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.5ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:11:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/days_controller.rb:13:in `show'
+  Rendering days/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."day_id" = ?[0m  [["day_id", "1"]]
+  ↳ app/views/days/show.html.erb:6
+  Rendered collection of days/_comment.html.erb [48 times] (Duration: 25.3ms | Allocations: 11821)
+  Rendered days/show.html.erb within layouts/application (Duration: 38.9ms | Allocations: 15247)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 188ms (Views: 76.4ms | ActiveRecord: 3.7ms | Allocations: 50246)
+
+
+Started GET "/attachments/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" for ::1 at 2021-01-24 23:27:43 +0900
+Started GET "/cable" for ::1 at 2021-01-24 23:27:43 +0900
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/cable/" [WebSocket] for ::1 at 2021-01-24 23:27:43 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Refile::App: Could not find attachment by id: d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c
+Refile::App: [2021-01-24 23:27:43 +0900] GET "/cfc73be77de5ea260360f516704e512e5c8827d4/store/d9cba71667e74413262620af56dfe9e8e206e6a4186aa52b65f24afaa50c/image.jpeg" 404 55.2ms
+
+DayChannel is transmitting the subscription confirmation
+DayChannel is streaming from day_channel
+Started POST "/comments" for ::1 at 2021-01-24 23:27:49 +0900
+Processing by CommentsController#create as JS
+  Parameters: {"authenticity_token"=>"aAZXxCNZ2DrWnAsb7XaNL3zQkqquemLzaVJPoD0NMSTRU3HBTTTG7gwQoCJhLp/X0wmmllC2wYmW/Mj1w+WuPA==", "comment"=>{"comment"=>"ああああああああ", "day_id"=>"1", "user_id"=>"1"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mDay Load (0.1ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "comment", "user_id", "day_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2021-01-24 14:27:49.159908"], ["updated_at", "2021-01-24 14:27:49.159908"], ["comment", "ああああああああ"], ["user_id", "1"], ["day_id", "1"]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  Rendered days/_comment.html.erb (Duration: 2.9ms | Allocations: 381)
+[ActionCable] Broadcasting to day_channel: {:comment=>"<div id=\"commentsCont\">\n  <div class=\"commentsItem\">\n    <p>1</p>\n    <p>ああああああああ</p>\n  </div>\n</div>"}
+DayChannel transmitting {"comment"=>"<div id=\"commentsCont\">\n  <div class=\"commentsItem\">\n    <p>1</p>\n    <p>ああああああああ</p>\n  </div>\n</div>"} (via streamed from day_channel)
+  Rendering comments/create.js.erb
+  Rendered comments/create.js.erb (Duration: 2.1ms | Allocations: 99)
+Completed 200 OK in 45ms (Views: 12.4ms | ActiveRecord: 1.7ms | Allocations: 9398)
+
+
